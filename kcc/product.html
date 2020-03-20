@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="common/css/default.css">
+    <link rel="stylesheet" href="common/css/style.css?v=201907301039">
+    <link rel="stylesheet" href="common/css/swiper.css">
+    <link rel="stylesheet" href="common/css/font.css">
+    <link rel="stylesheet" href="common/css/sub.css?v=20190904">
+    <!-- <link rel="stylesheet" href="common/css/fontawesome.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="common/js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="common/js/libs/jquery-3.4.1.min.js?v=1907241904"></script>
+    <script type="text/javascript" src="common/js/libs/jquery-migrate-3.0.1.min.js"></script>
+    <script type="text/javascript" src="common/js/main.js?v=1907291636"></script>
+    <script type="text/javascript" src="common/js/common.js?v=1907252210"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- wrap 시작 -->
+    <div id="wrap">
+        <!-- header 시작 -->
+        <header id="header" class="header">
+            <div class="inner">
+                <h1 class="logo"><a href="./index.html">kcc</a></h1>
+                <div class="gnbWarp">
+                    <ul id="nav">
+                        <li class="depth1">
+                            <a href="./company.html">KCC소개</a>
+                            <ul class="depth2">
+                                <li><a href="./company.html">기업정보</a></li>
+                                <li><a href="./company.html">CEO인사말</a></li>
+                                <li><a href="./company.html">투자정보</a></li>
+                                <li><a href="./company.html">사회적책임</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="./product.html">제품</a>
+                            <ul class="depth2">
+                                <li><a href="./product.html">도료</a></li>
+                                <li><a href="./product.html">유리</a></li>
+                                <li><a href="./product.html">창호</a></li>
+                                <li><a href="./product.html">바닥재</a></li>
+                                <li><a href="./product.html">홈씨씨인테리어</a></li>
+                            </ul>
+                        </li>  
+                        <li class="depth1">
+                            <a href="./rnd.html">R&D</a>
+                            <ul class="depth2">
+                                <li><a href="./rnd.html">연구소</a></li>
+                                <li><a href="./rnd.html">연구업적</a></li>
+                                <li><a href="./rnd.html">에너지제로하우스</a></li>
+                            </ul>
+                        </li>  
+                        <li class="depth1">
+                            <a href="./news.html">홍보</a>
+                            <ul class="depth2">
+                                <li><a href="./news.html">KCC뉴스</a></li>
+                                <li><a href="./news.html">KCC광고</a></li>
+                                <li><a href="./news.html">KCC사보</a></li>
+                            </ul>
+                        </li>  
+                        <li class="depth1">
+                            <a href="./contribution.html">사회공헌</a>
+                            <ul class="depth2">
+                                <li><a href="./contribution.html">사회공헌 소개</a></li>
+                                <li><a href="./contribution.html">사회공헌 활동</a></li>
+                                <li><a href="./contribution.html">사회공헌 발자취</a></li>
+                            </ul>
+                        </li>      
+                    </ul>        
+                </div>
+                <a href="javascript:toggleAllMenu();" class="btn_allMenu">전체메뉴</a>
+                <!-- allMenu_wrap 시작 -->
+                <div class="allMenu_wrap">
+                    <div class="allMenu_mask" onclick="toggleAllMenu()"></div>
+                    <div id="allMenu">
+                        <div class="allMenu_top">
+                            <h2><a href="./index.html">kcc</a></h2>
+                        </div>
+                        <div class="allMenu_con">
+                            <ul>
+                                <li class="depth1">
+                                    <a href="#">KCC소개</a>
+                                    <ul class="depth2">
+                                        <li><a href="./company.html">기업정보</a></li>
+                                        <li><a href="./company.html">CEO인사말</a></li>
+                                        <li><a href="./company.html">투자정보</a></li>
+                                        <li><a href="./company.html">사회적책임</a></li>
+                                    </ul>
+                                </li>
+                                <li class="depth1">
+                                    <a href="#">제품</a>
+                                    <ul class="depth2">
+                                        <li><a href="./product.html">도료</a></li>
+                                        <li><a href="./product.html">유리</a></li>
+                                        <li><a href="./product.html">창호</a></li>
+                                        <li><a href="./product.html">바닥재</a></li>
+                                    </ul>
+                                </li>
+                                <li class="depth1">
+                                    <a href="#">R&D</a>
+                                    <ul class="depth2">
+                                        <li><a href="./rnd.html">연구소</a></li>
+                                        <li><a href="./rnd.html">연구업적</a></li>
+                                        <li><a href="./rnd.html">에너지제로하우스</a></li>
+                                    </ul>
+                                </li>
+                                <li class="depth1">
+                                    <a href="#">홍보</a>
+                                    <ul class="depth2">
+                                        <li><a href="./news.html">KCC뉴스</a></li>
+                                        <li><a href="./news.html">KCC광고</a></li>
+                                        <li><a href="./news.html">KCC사보</a></li>
+                                    </ul>
+                                </li>
+                                <li class="depth1">
+                                    <a href="#">사회공헌</a>
+                                    <ul class="depth2">
+                                        <li><a href="./contribution.html">사회공헌 소개</a></li>
+                                        <li><a href="./contribution.html">사회공헌 활동</a></li>
+                                        <li><a href="./contribution.html">사회공헌 발자취</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn_close" onclick="toggleAllMenu()">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header 끝 -->
+        <!-- sub-visual 시작 -->
+        <div class="sub_visual product">
+            <div class="page_tit">
+                <h2>제품소개</h2>
+                <div class="breadcrumb">
+                    <a href="#" >홈</a>
+                    <a href="#">제품</a>
+                    <a href="#">도료</a>
+                </div>
+            </div>
+        </div>  
+        <!-- sub-visual 끝 -->
+        <!-- contanier 시작 -->
+        <div id="container" class="product">
+            <div class="lnb_wrap">
+                <div id="lnb" class="lnb col4">
+                    <ul>
+                        <li class="on"><a href="#">도료</a></li>
+                        <li><a href="#">유리</a></li>
+                        <li><a href="#">창호</a></li>
+                        <li><a href="#">바닥재</a></li>
+                    </ul>
+                </div>
+            </div>   
+            <!-- contents 시작 -->
+            <div id="contents" class="contents">
+                <div class="content_wrap">
+                    <div class="tit_sec">
+                        <em>PRODUCT</em>
+                        <strong>우리의 일상생활 속에서 언제나<br/> KCC를 발견할 수 있습니다.</strong>
+                    </div>
+                    <div class="cont1">
+                        <p class="desc">건물 내 외부용 도료와 DIY/인테리어 도료, 탄성 방수도료, 바닥 마감도료 등 현대 건축의 다양한 특성과 용도에 맞춰 개발된 건축용 도료는 내구력이 뛰어나 건축물의 수명을 연장시키며 다체로운 색상으로 건축물의 외관을 아름답게 장식해 줍니다. </p>
+                        <p class="desc">KCC는 건축물 내외부 벽면 콘크리트 마감 부위에 주로 도장하는 수성 도료 '숲으로' 제품군과 목재나 철재에 주로 도장하는 유성 도료 '센스멜' 제품군, 그리고 비노출 방수재로 사용하는 '스포탄'과 보행로 및 주차장 등의 바닥재로 사용하는 '유니폭시' 등 다양한 제품군을 보유하고 있습니다. KCC외부용 도료 제품은 건축물의 용도와 고객의 요구에 최선의 대응이 가능하도록 품질 등급별로 제품 라인업을 구축하여 폭넓게 유통하는 '숲으로SE외부용','숲으로 듀라센스', 고내후성 실리콘 도료 '숲으로 네오실PLUS'등을 생산하고 있습니다.</p>
+                        <div class="tab_area">
+                            <ul id="tab" class="tab col4">
+                                <li><a href="#" data-num="1">수성도료</a></li>
+                                <li><a href="#" data-num="2">유성도료</a></li>
+                                <li><a href="#" data-num="3">방수재</a></li>
+                                <li><a href="#" data-num="4">바닥재</a></li>
+                            </ul>
+                            <div class="tab_container">
+                                <div class="tab_content tab_content1">
+                                    <section id="product_main" class="product_main">
+                                        <div class="item_img">
+                                            <img src="common/images/sub/img_product01.jpg" alt="수성도료">
+                                        </div>
+                                        <div class="item_desc">
+                                            <h4>수성도료</h4>
+                                            <p>고급형 수성 페인트 "숲으로"는 유해물질 함유 및 방출량을 최소화시킨 친환경 대표 브랜드로서, 다양한 색상으로 미적인 효과를 구현함과 동시에 부착성과 내구성이 뛰어나 오랜 기간 건축물을 보호해줄 수 있습니다. 또한 내후성, 내오염성, 곰팡이 억제력 등이 우수하여 건축물 내외부 마감용으로 다양하게 적용할 수 있습니다. </p>
+                                            <dl>
+                                                <dt>용도</dt>
+                                                <dd>아파트 내외부 콘크리트, 시멘트 몰탈 마감용
+                                                </dd>
+                                                <dd>시내 철재, 목재 등의 인테리어 마감용</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>특징</dt>
+                                                <dd>수용성/비인화성으로 인체에 안전함</dd>
+                                                <dd>유성 type에 비해 경제적인 가격</dd>
+                                                <dd>친환경 인증 제품으로, 최근의 건축 시장 추세에 적합함</dd>
+                                            </dl>
+                                            <div class="item_btn">
+                                                <a href="#" class="btn_inquire">문의하기</a>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section id="product_data" class="product_data">
+                                        <h3 class="t_tit2">주요제품리스트</h3>
+                                        <table class="default_table">
+                                            <colgroup>
+                                                <col width="60px">
+                                                <col width="70%">
+                                                <col width="*">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>NO.</th>
+                                                    <th>제품명</th>
+                                                    <th>기술자료</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>숲으로홈앤웰빙</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>숲으로KS1급외부용</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>숲으로KS1급내부용</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>숲으로에이스외부용</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="subtext">* 더 많은 제품정보/기술자료는 검색센터를 이용해 주시기 바랍니다.</div>
+                                    </section>
+                                </div>
+                                <div class="tab_content tab_content2">
+                                    <section id="product_main" class="product_main">
+                                        <div class="item_img">
+                                            <img src="common/images/sub/img_product02.jpg" alt="유성도료">
+                                        </div>
+                                        <div class="item_desc">
+                                            <h4>유성도료</h4>
+                                            <p>주로 철재, 목재에 도장되는 유성도료는, 뛰어난 색상 구현력과 광택으로 최고의 인테리어 효과를 구현할 수 있습니다. 또한 작업성과 은폐력이 우수하여 쉽고 빠르게 도장할 수 있으며, 오랜 기간 동안 소지의 부식과 부패를 방지할 수 있습니다. </p>
+                                            <dl>
+                                                <dt>용도</dt>
+                                                <dd>철재, 목재 마감용
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>특징</dt>
+                                                <dd>내구성, 내수성 우수함</dd>
+                                                <dd>도막의 유연성 우수함</dd>
+                                                <dd>경제적인 가격</dd>
+                                                <dd>작업성 우수 (빠른 건조)</dd>
+                                            </dl>
+                                            <div class="item_btn">
+                                                <a href="#" class="btn_inquire">문의하기</a>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section id="product_data" class="product_data">
+                                        <h3 class="t_tit2">주요제품리스트</h3>
+                                        <table class="default_table">
+                                            <colgroup>
+                                                <col width="60px">
+                                                <col width="70%">
+                                                <col width="*">
+                                            </colgroup>    
+                                            <thead>
+                                                <tr>
+                                                    <th>NO.</th>
+                                                    <th>제품명</th>
+                                                    <th>기술자료</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>유크릴상도</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>하이솔리드 락카-센스락상도</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>센스멜조합</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>센스멜골드</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="subtext">* 더 많은 제품정보/기술자료는 검색센터를 이용해 주시기 바랍니다.</div>
+                                    </section>
+                                </div>
+                                <div class="tab_content tab_content3">
+                                    <section id="product_main" class="product_main">
+                                        <div class="item_img">
+                                            <img src="common/images/sub/img_product03.jpg" alt="방수재">
+                                        </div>
+                                        <div class="item_desc">
+                                            <h4>방수재</h4>
+                                            <p>초속 경화 타입으로서 촉매없이 저온 및 고습 조건에서도 도장이 가능하여 공사 기간 단축 및 빠른 보수 도장을 할 수 있는 고기능성 도료입니다. KCC 방수재는 신율과 도막강도가 뛰어나 소지의 크랙과 균열에 대한 견딤성이 우수하며, 소지와의 접착력이 좋아 도장 후 장기간 방수 성능을 유지할 수 있습니다. </p>
+                                            <dl>
+                                                <dt>용도</dt>
+                                                <dd>옥상 노출방수 또는 옥외주차장,<br/> 외부 바닥 마감용</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>특징</dt>
+                                                <dd>탄성 및 신율 우수함
+                                                </dd>
+                                                <dd>내구성, 내후성 우수함</dd>
+                                                <dd>내화학성 우수함</dd>
+                                            </dl>
+                                            <div class="item_btn">
+                                                <a href="#" class="btn_inquire">문의하기</a>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section id="product_data" class="product_data">
+                                        <h3 class="t_tit2">주요제품리스트</h3>
+                                        <table class="default_table">
+                                            <colgroup>
+                                                <col width="60px">
+                                                <col width="70%">
+                                                <col width="*">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>NO.</th>
+                                                    <th>제품명</th>
+                                                    <th>기술자료</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>스포탄KS수직면방수재</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>모노탄1액형노출방수재 </td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>스포탄KS비노출방수재(하절용)</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>스포탄KS비노출방수재(동절용)</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>스포탄KS1류방수재(프리미엄)</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr> 
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>스포탄KS노출방수재</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>숲으로탄성방수재</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="subtext">* 더 많은 제품정보/기술자료는 검색센터를 이용해 주시기 바랍니다.</div>
+                                    </section>
+                                </div>
+                                <div class="tab_content tab_content4">
+                                    <section id="product_main" class="product_main">
+                                        <div class="item_img">
+                                            <img src="common/images/sub/img_product04.jpg" alt="바닥재">
+                                        </div>
+                                        <div class="item_desc">
+                                            <h4>바닥재</h4>
+                                            <p>주차장, 공장, 물류센터, 창고 등 물리적 충격이 심한 공간의 바닥에 도장되어, 소지(주로 콘크리트)를 장기간 보호해주고 내약품성, 내오염성 및 미끄럼방지, 소음 저감 등 다양한 성능을 보유하고 있어, 보다 안전하고 미려한 공간을 오랫 동안 조성해 줄 것입니다.</p>
+                                            <dl>
+                                                <dt>용도</dt>
+                                                <dd>콘크리트, 시멘트 몰탈 바닥 마감용(주로 공장 또는 지하주차장</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>특징</dt>
+                                                <dd>내마모성, 내충격성 등의 기계적 물성이 우수함</dd>
+                                                <dd>내약품성, 내오염성, 내용제성이 강함</dd>
+                                                <dd>미관이 우수하고 색상 선택이 자유로움</dd>
+                                            </dl>
+                                            <div class="item_btn">
+                                                <a href="#" class="btn_inquire">문의하기</a>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section id="product_data" class="product_data">
+                                        <h3 class="t_tit2">주요제품리스트</h3>
+                                        <table class="default_table">
+                                            <colgroup>
+                                                <col width="60px">
+                                                <col width="70%">
+                                                <col width="*">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>NO.</th>
+                                                    <th>제품명</th>
+                                                    <th>기술자료</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>유니폭시레진몰탈</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>유니폭시라이닝</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>유니폭시코팅</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>하이퍼우레아 PU295A</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>스포탄고경질중도</td>
+                                                    <td><a href="#" class="btn_file"></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="subtext">* 더 많은 제품정보/기술자료는 검색센터를 이용해 주시기 바랍니다.</div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contents 끝 -->
+        </div>
+        <!-- contanier 끝 -->
+        <!-- footer 시작 -->
+        <footer id="footer" class="footer">
+            <div class="inner">
+                <div class="fl_l">
+                    <a href="#">kcc</a>
+                    <p class="copy">COPYRIGHT (C) 2017 KCC CORPORATION.<br/> ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="fl_c">
+                    <ul>  
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">협력업체등록안내</a></li>
+                        <li><a href="#">동반성장 홍보영상</a></li>
+                        <li><a href="#">전자공고</a></li>
+                        <li><a href="#">SITEMAP</a></li>
+                    </ul>
+                    <P>서울특별시 서초구 사평대로 344 </P>
+                    <P>고객상담실 080-022-8200</P>
+                    <p>대표번호 02-3480-5000</P>
+                </div>
+                <div class="fl_r">
+                    <div class="btnWrap">
+                        <div class="btn_link">
+                            <a href="#none">KCC그룹 패밀리 사이트 </a>
+                        </div>
+                        <div class="linkArea">
+                            <strong>KCC그룹 패밀리 사이트 </strong>
+                            <p>KCC의 패밀리 사이트를 소개합니다. <br/> 아래 계열사를 선택하시면 해당 홈페이지로 이동 합니다. </p>      
+                            <div>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/kccstory/" target="_blank">KCC 공식 페이스북</a></li>
+                                    <li><a href="http://blog.naver.com/kcc_world" target="_blank">KCC 공식 블로그</a></li>
+                                    <li><a href="https://www.kccworld.co.kr/kccsilicone/main.do" target="_blank">KCC 실리콘</a></li>
+                                    <li><a href="http://www.kccrefinish.co.kr/" target="_blank">KCC 자동차보수용도료</a></li>
+                                    <li><a href="https://www.kccworld.co.kr/kccmarine/main.do" target="_blank">KCC 선박도료</a></li>
+                                    <li><a href="http://www.kccegis.com" target="_blank">KCC 이지스 프로농구단</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="http://www.homecc.co.kr" target="_blank">홈씨씨인테리어</a></li>
+                                    <li><a href="http://www.kccworld.net" target="_blank">KCC 건설</a></li>
+                                    <li><a href="http://kac.kccworld.co.kr" target="_blank">KAC</a></li>
+                                    <li><a href="http://www.kccgolf.co.kr" target="_blank">금강레저</a></li>
+                                    <li><a href="http://www.baschem.co.uk" target="_blank">바실돈</a></li>
+                                    <li><a href="http://www.kcccolorndesign.com" target="_blank">KCC 컬러&디자인센터</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <strong class="f_info"><a href="#">데이터뱅크 +</a></strong>
+                </div>
+            </div>
+        </footer>
+        <!-- footer 끝 -->
+   </div>
+</body>
+</html>
+         

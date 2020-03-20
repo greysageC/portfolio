@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/daterangepicker.css" /> -->
+    <script type="text/javascript" src="./js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="./js/libs/jquery-3.4.1.min.js"></script>
+    <!-- <script type="text/javascript" src="./js/libs/moment.min.js"></script> -->
+    <!-- <script type="text/javascript" src="./js/libs/daterangepicker.js"></script> -->
+    <script type="text/javascript" src="./js/libs/jquery-ui.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <!-- top-area -->
+            <div class="top-area">
+                <div class="inner">
+                    <ul class="left-element">
+                        <li><a href="#">마일리지 적립몰</a></li>
+                        <li><a href="#">기내 면세점</a></li>
+                        <li><a href="#">기업우대</a></li>
+                    </ul>
+                    <ul class="right-element">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li class="btn-tooltip">
+                            <a href="#">고객서비스</a>
+                            <ul class="tooltipbox">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#" >자주찾는질문</a></li>
+                                <li><a href="#">고객의 말씀</a></li>
+                                <li><a href="#">양식다운로드</a></li>
+                            </ul>
+                        </li>
+                        <li class="lang-select">
+                            <a href="#" class="btn-language"><span class="country01">대한민국</span></a>
+                            <a href="#">한국어</a>
+                            <a href="#">English</a>
+                            <div class="layer-pop" id="layerLanguage">
+                                <p class="pop-tit">선택하세요</p>
+                                <select id="nation" title="국가" >
+                                    <option value="KR">대한민국</option>
+                                    <option value="DE">독일</option>
+                                    <option value="US">미국</option>
+                                    <option value="UZ">우즈베키스탄</option>
+                                    <option value="CN">중국</option>
+                                </select>
+                                <select id="lang" title="언어">
+                                </select>
+                                <button type="button">적용하기</button>
+                                <a href="#" class="btn-close"><span class="hd-element">팝업닫기버튼</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- top-area -->
+            <!-- body-area -->
+            <div class="body-area">
+                <div class="inner">
+                    <h1 class="logo"><a href="./index.html"><img src="./images/common/logo.png" alt="진에어"></a></h1>
+                    <div class="gnb-area">
+                        <span class="gnb-line"></span>
+                        <ul class="gnb">
+                            <li><a href="./booking.html">예약</a></li>
+                            <li><a href="./checkIn.html">여행 준비</a></li>
+                            <li><a href="./travel.html">여행</a></li>
+                            <li><a href="./mileage.html">마일리지몰</a></li>
+                        </ul> 
+                    </div>
+                    <div class="nav-right">
+                        <a href="#" class="btn-mypage">
+                            <span class="hd-element">마이페이지버튼</span>
+                        </a>
+                        <button class="btn-search">
+                            <span class="hd-element">검색버튼</span>
+                        </button>
+                        <div class="layer-pop" id="layerSearch">
+                            <form action="">
+                                <input type="text" placeholder="검색어를 입력하세요">
+                                <button type="button" class="gray">검색</button>
+                            </form>
+                            <a href="#" class="btn-close"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- body-area -->
+        </header>
+        <!-- header -->
+        <!-- location-box -->
+        <div class="location-box">
+            <div class="inner">
+                <ul class="location">
+                    <li class="home"><a href="index.html"><span class="hd-element">메인으로 이동</span></a></li>
+                    <li>
+                        <a href="#">서비스안내</a>
+                        <ul>
+                            <li><a href="./booking.html">예약</a></li>
+                            <li><a href="./checkIn.html">여행 준비</a></li>
+                            <li><a href="./travel.html">여행</a></li>
+                            <li><a href="./mileage.html">서비스안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">항공권 예약</a>
+                        <ul>
+                            <li><a href="#">항공권 예약</a></li>
+                            <li><a href="#">예약 조희</a></li>
+                            <li><a href="#">체크인</a></li>
+                            <li><a href="#">운항 정보</a></li>
+                            <li><a href="#">취항지 정보</a></li>
+                        </ul>
+                    </li>
+                </ul>    
+            </div>
+        </div>
+        <!-- location-box -->
+        <!-- container -->
+        <div id="container">
+            <div class="cont mileage-cont">
+                <div class="inner">
+                    <div class="tab-area">
+                        <ul class="tab">
+                            <li class="on"><a href="#">홈</a></li>
+                            <li><a href="#">쇼핑</a></li>
+                            <li><a href="#">여행</a></li>
+                            <li><a href="#">라이프</a></li>
+                        </ul>
+                        <!-- tab-cont -->
+                        <div class="tab-cont">
+                            <h4>추천상품</h4>
+                            <ul class="product-list">
+                                <li>
+                                    <a href="#">
+                                        <div class="img-wrap">
+                                            <img src="./images/main/main-event-01.jpg" alt="훌~쩍 떠나고 싶을 땐?">
+                                        </div>
+                                        <dl>
+                                            <dt>
+                                                <span class="sub-txt">이벤트</span>
+                                                <p class="tit">훌~쩍 떠나고 싶을 땐?</p>
+                                            </dt>
+                                            <dd>
+                                                <div class="price"><span class="num">1000</span><span class="unit">마일</span></div>
+                                                <div class="date">2020-02-10 ~ 2020-03-28</div>
+                                            </dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img-wrap">
+                                            <img src="./images/main/main-event-02.jpg" alt="진에어 동계 코트룸 서비스">
+                                        </div>
+                                        <dl>
+                                            <dt>
+                                                <span class="sub-txt">이벤트</span>
+                                                <p class="tit">진에어 동계 코트룸 서비스</p>
+                                            </dt>
+                                            <dd>
+                                                <div class="price"><span class="num">500</span><span class="unit">마일</span></div>
+                                                <div class="date">2020-03-09 ~ 2020-04-30</div>
+                                            </dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img-wrap">
+                                            <img src="./images/main/main-event-03.jpg" alt="#편안 #안전 #행복 진에어 향기 테라피">
+                                        </div>
+                                        <dl>
+                                            <dt>
+                                                <span class="sub-txt">이벤트</span>
+                                                <p class="tit">#편안 #안전 #행복 진에어 향기 테라피</p>
+                                            </dt>
+                                            <dd>
+                                                <div class="price"><span class="num">300</span><span class="unit">마일</span></div>
+                                                <div class="date">2019-12-18 ~ 2020-12-17</div>
+                                            </dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h4>공지사항</h4>
+                            <ul class="notice-list">
+                                <li>
+                                    <span class="category">공지사항</span>
+                                    <a href="#">개인정보처리방침 개정 안내(3/12)</a>
+                                    <span class="date">2020-03-05</span>
+                                </li>
+                                <li>
+                                    <span class="category">공지사항</span>
+                                    <a href="#">봄 맞이 지니스토어 전격 개편!</a>
+                                    <span class="date">2020-03-04</span>
+                                </li>
+                                <li>
+                                    <span class="category">공지사항</span>
+                                    <a href="#">2020년 3월 신용카드 무이자 할부 및 혜택 안내</a>
+                                    <span class="date">2020-03-01</span>
+                                </li>
+                            </ul>
+                            <div class="mileage-info">
+                                <p class="tit">마일리지 사용몰 이용 전 꼭 <em class="purple">확인하세요.</em></p>
+                                <ul class="info-icon-wrap">
+                                    <li>
+                                        <a href="#"><p>마일리지 사용몰 구매내역</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>이용방법 및 고객센터</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><p>마일리지 비밀번호 설정방법</p></a>
+                                    </li>
+                                </ul>
+                                <div class="gray-box">
+                                    <p>마일리지는 '본인' 사용 원칙입니다.</p>
+                                    <em class="purple">* 진에어로고샵은 가족마일리지 합산 가능합니다.</em>
+                                    <p>마일리지 비밀번호 설정이 불가한 외국인 또는 해외거주 회원의 이용이 제한됩니다.</p>
+                                    <em class="purple">* 진에어기내면세점은 마일리지 비밀번호 없이 구매 가능합니다.</em>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tab-cont -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+        <!-- footer -->
+        <footer>
+            <!-- quick-nav -->
+            <div class="quick-nav">
+                <div class="inner">
+                    <ul class="quick-icon">
+                        <li><a href="#">지니쿠폰</a></li>
+                        <li><a href="#">나비포인트</a></li>
+                        <li><a href="#">예약 확인</a></li>
+                    </ul>
+                    <p>나비포인트와 지니쿠폰을 통해 더욱 합리적인 여행을 계획하세요.</p>
+                </div>
+            </div>
+            <!-- quick-nav -->
+            <!-- foot-menuwrap -->
+            <div class="menu-wrap">
+                <div class="inner">
+                    <dl>
+                        <dt>회사안내</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">채용정보</a></li>
+                                <li><a href="#">CEO인사말</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">기업개요</a></li>
+                                <li><a href="#">기업지배구조</a></li>
+                                <li><a href="#">투자정보</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>약관 및 안내</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">개인정보 처리방침</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">여객운송약관</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">법적 고지문</a></li>
+                                <li><a href="#">사이트맵</a></li>
+                                <li><a href="#">e-티켓 확인증</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>고객서비스</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">자주 묻는 질문(FAQ)</a></li>
+                                <li><a href="#">고객의 말씀(Q&A)</a></li>
+                                <li><a href="#">기내 유실물 찾기</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">이용자 서비스</a></li>
+                                <li><a href="#">피해구제계획</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <div class="sns-wrap">
+                        <ul class="sns">
+                            <li class="twitter"><a href="#">트위터 바로가기</a></li>
+                            <li class="facebook"><a href="#">페이스북 바로가기</a></li>
+                            <li class="youtube"><a href="#">유튜브 바로가기</a></li>
+                            <li class="insta"><a href="#">인스타그램 바로가기</a></li>
+                            <li class="blog"><a href="#">블로그 바로가기</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- foot-menuwrap -->
+            <div class="info-wrap">
+                <div class="inner">
+                    <div class="info">
+                        <address>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>㈜진에어</li>
+                                        <li>대표이사 최정호</li>
+                                        <li>사업자등록번호 121-81-89086</li>
+                                        <li>통신판매업 신고번호 : 제2008-서울 강서-0408</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>주소 : 서울시 강서구 공항대로 453</li>
+                                        <li>개인정보보호책임자 : 이광</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </address>
+                        <p class="copy">Copyright © JIN AIR. All Rights Reserved.</p>
+                    </div>
+                    <div class="newsletter">
+                        <h3>뉴스레터 신청</h3>
+                        <input type="text" name="emAdrNewsletter" id="emAdrNewsletter" placeholder="Email Address"> 
+                        <a href="#" id="btnAddNewsLetter">신청</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+    </div>
+    <script type="text/javascript" src="./js/common.js"></script>
+</body>
+</html>

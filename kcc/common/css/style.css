@@ -1,0 +1,150 @@
+html.scroll_lock, body.scroll_lock {height:100%; overflow:hidden;}
+
+	
+#wrap{position: relative;width: 100%;min-height: 100%;box-sizing: border-box;}
+
+/* header */
+#header{overflow: hidden;position: fixed;left: 0;top: 0;z-index: 99;width: 100%;height: 80px;transition: .5s height, .2s background;box-sizing: border-box;}
+#header .inner{position: relative;max-width: 1200px;margin:auto;}
+
+#header .logo{position: absolute;left: 0;top: 22px;text-indent: 100%; white-space: nowrap; overflow: hidden;}
+#header .logo a{display: block;width: 58px;height: 32px;background-image: url(../images/common/kcc_logo_white.png);background-repeat: no-repeat;background-position: 0 0;background-size: cover;}
+
+#header .gnbWarp{max-width: 700px;height: 80px;margin: auto; text-align: center;}
+#header .gnbWarp #nav li{width: 140px;}
+#header .gnbWarp #nav li a:hover{color: #0c4da2;}
+#header .gnbWarp #nav .depth1{position: relative;float: left;width: 20%;height: 80px;line-height: 80px;}
+#header .gnbWarp #nav .depth1:before{content: ''; display: block; position:absolute; bottom:0px; left:0; width:100%; height:3px; background-color:#0c4da2; opacity:0; transform:scaleX(0); transition:all 0.2s linear;}
+#header .gnbWarp #nav .depth1:hover:before{opacity:1; transform:scaleX(1);}
+#header .gnbWarp #nav .depth1 > a{display: block;color: #ffffff;font-weight: 500;  font-size: 17px;}
+#header .gnbWarp #nav .depth2{display:none;position: absolute;left: 0;padding-top: 20px;}
+#header .gnbWarp #nav .depth2 li a{display: block;padding: 10px 0;line-height: 1;}
+
+#header .btn_allMenu{position: absolute; top: 21px; right: 0; width: 36px; height: 36px;background-repeat: no-repeat;background-position: center; background-image: url(../images/common/btn_allmenu_white.png); background-size: 30px; text-indent: -999px; overflow: hidden;}
+.allMenu_mask { position: fixed; top: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.76); z-index: 99; opacity: 0;  -webkit-transition: opacity .3s; transition: opacity .3s; }
+#allMenu {position: fixed; top: 0; right: 0; width: 448px; height: 100%; background: #fff; z-index: 100; -webkit-transform: translateX(102%); transform: translateX(102%);  -webkit-transition: all .3s; transition: all .3s; }
+#allMenu .allMenu_top{height: 60px;background: #0c4da2;}
+#allMenu .allMenu_top h2{margin-left: 11px;}
+#allMenu .allMenu_top h2 a{display: inline-block; width: 58px; height: 32px;margin-top: 11px; background-image: url(../images/common/kcc_logo_white.png); background-size: cover;text-indent: 100%; white-space: nowrap; overflow: hidden;}
+#allMenu .btn_close { position: absolute; top: 16px; right: 5px; width: 25px; height: 25px; border: none; background: url(../images/common/btn_close.png) no-repeat center center; background-size: 17px; text-indent: -999px; overflow: hidden; outline: none; z-index: 10; }
+
+#allMenu .allMenu_con { height: 100%; padding-top: 28px; overflow: auto; -webkit-overflow-scrolling: touch;box-sizing: border-box; }
+#allMenu .allMenu_con .depth1 a {display: block; position: relative; height: 56px;padding: 0 24px 0 20px; color: #000; line-height: 56px;  font-size: 21px; }
+#allMenu .allMenu_con .depth1 > a:after{content: ''; position: absolute; right: 20px; top: 50%;width: 20px; height: 20px; margin-top: -8px; background: url(../images/common/ico_arrow_lnb_black.png) no-repeat 0 0 / contain;  opacity: 1; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+#allMenu .allMenu_con .depth1 > a.active:after { background: url(../images/common/ico_arrow_lnb_blue.png) no-repeat 0 0 / contain;-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
+#allMenu .allMenu_con .depth2{display: none; margin: 6px auto 12px; padding: 16px 0 17px; background: #f7f7f7;}
+#allMenu .allMenu_con .depth2 a{height: 36px;margin-left: 17px;font-size: 14px;line-height: 36px;}
+
+.open .allMenu_mask{left:0; opacity:1;}
+.open #allMenu{-webkit-transform: translateX(0); transform: translateX(0);}
+
+/* #header .util{position: absolute;right: 0;top: 33px;}
+#header .util ul li{position: relative; float: left;margin-left: 20px;}
+#header .util ul li:after{position: absolute;top: 2px;right: -10px;width: 1px;height: 10px;background: #ccc;content: '';}
+#header .util ul li:last-child:after{display: none;}
+#header .util a{display: block;color: #ffffff;font-size: 13px;}    */
+
+#header.all{z-index: 100;height: 300px;background: #ffffff;border-bottom: 1px solid #ececec;}
+#header.all:before{content: '';display: block;position: absolute;left: 0;top: 80px;width: 100%;height: 220px;background: #f5f5f5;}
+#header.on{background: #ffffff;border-bottom: 1px solid #ececec;z-index: 100;}
+#header.on .gnbWarp #nav .depth1 > a,#header.all .gnbWarp #nav .depth1 > a{color: #444;}
+#header.on .logo a,#header.all .logo a{background-image: url(../images/common/kcc_logo.png);}
+#header.on .btn_allMenu,#header.all .btn_allMenu{background-image: url(../images/common/btn_allmenu_black.png);}
+/* #header.on .util a,#header.all .util a{color: #444444;} */
+
+/* footer */
+#footer{position: relative;min-height: 213px;background-color: #202020;color: #ffffff;}
+#footer .inner{position: relative;max-width: 1160px;margin: auto;}
+#footer .inner:after{content: '';display: block;clear: both;}
+#footer .inner > div{float: left;padding-top: 36px;}
+
+#footer .fl_l{width: 25%;}
+#footer .fl_l a{display: inline-block;width: 63px;height: 35px;background: url(../images/common/kcc_logo_gray.png) 0 0 no-repeat;background-size: cover;text-indent: -999px;}
+#footer .fl_l .copy {padding: 45px 0 0 1px; color: #808080; font-size: 12px; line-height: 20px;}
+
+#footer .fl_c{width: 55%;}
+#footer .fl_c ul{margin-bottom: 30px;font-size: 0;}
+#footer .fl_c ul:after{content: '';display: block;clear: both;}
+#footer .fl_c ul li{position: relative; display: inline-block;}
+#footer .fl_c ul li:after{content: '';  position: absolute;right: 0;top: 50%;width: 1px;height: 12px;margin-top: -6px;background-color: rgba(255,255,255,0.3);}
+#footer .fl_c ul li:last-of-type:after{display: none;}
+#footer .fl_c ul li a{display: inline-block;padding:0 24px;color: #ffffff;font-weight: 700;font-size: 13px;}
+#footer .fl_c ul li:first-of-type a{padding-left: 0;}
+#footer .fl_c ul li:last-of-type a{padding-right: 0;}
+#footer .fl_c p{color: #808080;font-size: 12px;line-height: 20px;}
+
+#footer .inner .fl_r{width: 20%;padding-top: 0;text-align: right;}
+#footer .fl_r .btnWrap{position: relative;}
+#footer .fl_r .btnWrap .btn_link{position: relative;   padding-right: 10px;}
+#footer .fl_r .btnWrap .btn_link a{display: inline-block; padding: 36px 0;color: #808080;}
+#footer .fl_r .btnWrap .linkArea{display: none; position: absolute;bottom: 70px;right: 0;width: 360px;padding: 30px 20px; background: #f3f3f3;box-shadow: 3px 7px 9px 0 rgba(0,0,0,.2);text-align: left;z-index: 10;box-sizing: border-box;}
+#footer .fl_r .btnWrap .linkArea:after{content: '';display: block;clear: both;}
+#footer .fl_r .btnWrap .linkArea strong{color: #0c4da2; font-size: 18px; }
+#footer .fl_r .btnWrap .linkArea p{padding-top: 20px;padding-bottom: 20px; color: #333;line-height: 1.3;}
+#footer .fl_r .btnWrap .linkArea > div{float: left;width: 50%;box-sizing: border-box;}
+#footer .fl_r .btnWrap .linkArea > div:last-of-type{padding-left: 20px;border-left: 1px solid #ccc;}
+#footer .fl_r .btnWrap .linkArea > div a{color: #666666;line-height: 1.4;}
+#footer .fl_r .f_info a{display: inline-block;padding-top: 50px; color: #fff; font-size: 17px; line-height: 24px;}
+
+/* tab */
+.tab.col3 li{width: calc(100% / 3);}
+.tab.col4 li{width: calc(100% / 4);}
+.tab.col5 li{width: calc(100% / 5);}
+.tab:after{content: '';display: block;clear: both;}
+.tab li{float: left;}
+.tab li a{display: inline-block;width: 100%;height: 60px;border: 1px solid #ddd;border-right: none;color: #999999;text-align: center;line-height: 60px;}
+.tab li a:last-child{border-right: 1px solid #ddd;}
+.tab li.on{background-color: #0c4da2;}
+.tab li.on a{color: #ffffff;font-weight: 500;}
+.tab_content{display: none;}
+
+/* table */
+.default_table{border-top: 2px solid #0c4da2; border-bottom: 1px solid #e1e1e1;}
+.default_table th,.default_table td{border-left: 1px solid #ddd; min-height: 50px;padding: 20px;vertical-align: middle;}
+.default_table th{background: #f7f7f7;font-weight: 500;}
+.default_table td{text-align: center;border-top: 1px solid #ddd;}
+.default_table thead th:first-child {border-left: 0;}
+.default_table tbody tr td:first-child{border-left: 0;}
+
+@media all and (max-width: 1280px) {
+    #header .logo{left: 32px;}
+    #header .btn_allMenu{right: 32px;}
+    #footer .inner{padding:0 32px;}
+    #footer .fl_c ul li{line-height: 2;}
+}
+
+/* Tablet css */
+@media all and (max-width: 1080px) {
+    #header{padding:0 32px;}
+    #header .gnbWarp{display: none;}
+    #footer .inner > div{width: 100% !important;text-align: center;}
+    #footer .fl_l .copy{padding: 10px 0 0 1px;}
+    #footer .inner .fl_r{text-align: center;}
+    #footer .fl_c{padding-top: 10px !important;}
+    #footer .fl_c ul{margin-bottom: 10px;}
+    #footer .fl_c ul li{line-height: 1; }
+    #footer .fl_r .btnWrap .btn_link{padding: 0;}
+    #footer .fl_r .btnWrap .btn_link a{padding: 20px 0;color: #fff;font-size: 17px;}
+    #footer .fl_r .btnWrap .linkArea{bottom: 50px; right: 50%;width: 220px;margin-right: -110px;}
+    #footer .fl_r .btnWrap .linkArea strong{display: inline-block;margin-bottom: 15px;}
+    #footer .fl_r .btnWrap .linkArea p{display: none;}
+    #footer .fl_r .btnWrap .linkArea > div{float: none;width: 100%;}
+    #footer .fl_r .btnWrap .linkArea > div:last-of-type{padding-left: 0;border: none;}
+    #footer .fl_r .btnWrap .linkArea > div a{line-height: 1.7;}
+    #footer .fl_r .f_info a{padding-top: 0;padding-bottom: 30px;}
+    
+}
+
+/* Mobile css */
+@media all and (max-width: 766px) {
+    #header{height: 64px;padding: 0 16px;}
+    #header .logo { left: 0; top: 16px; }
+    #header .btn_allMenu { right: 0; top: 15px; }
+    #allMenu{width: 274px;}
+
+
+    #footer .inner{padding: 0 16px;}
+    #footer .fl_c ul li a{padding:0 5px;font-weight: 400;line-height: 1.5;}
+    #footer .fl_r .btnWrap .btn_link a{font-size: 15px;}
+    #footer .fl_r .f_info a{font-size: 15px;}
+}

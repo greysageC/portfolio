@@ -1,0 +1,157 @@
+/* container */
+#container .inner{position: relative;width: 1180px;margin: auto;padding: 50px 0;}
+#container h3{margin: 60px 0 50px 0; font-size: 40px; color: #000; text-align: center; font-weight: normal; line-height: 1;}
+#container h4{margin: 50px 0 30px; font-size: 28px; color: #000; line-height: 1;}
+#container h4 + .txt-sub{font-size: 16px;margin-bottom: 30px;}
+.visual-banner{display: table; width: 100%;height: 310px;margin-bottom: 30px;padding: 40px 440px 40px 50px; box-sizing: border-box; background-color: #e6e2df; background-repeat: no-repeat; background-position: right bottom;}
+.visual-banner .banner-cont{display: table-cell; font-size: 18px;vertical-align: middle;}
+
+/* gray-box */
+.gray-box {position: relative; margin-top: 80px; padding: 40px; background-color: #f7f7f7; }
+.gray-box h5{margin-bottom: 15px; font-size: 23px; font-weight: normal; color: #000;}
+
+/* location-box */
+.location-box{ height: 48px; margin-top: 130px; background: #6d6e70; z-index: 50;}
+.location-box .inner{width: 1180px;margin: auto;}
+.location-box .location::after{content: '';display: block;clear: both;}
+
+.location .home{width: 50px;background: #5f6062 url(../images/common/ico_loca_home.png) center no-repeat;}
+.location > li{position: relative; float: left;width: 280px;height: 48px;z-index: 10;}
+.location > li a{display: inline-block;position: relative;width: 100%;padding-left: 20px;box-sizing: border-box;}
+.location > li > a{height: 48px;line-height: 48px;border-right: 1px solid #8a8b8d;color: #ffffff;}
+.location > li > a::after{content: '';display: block;position: absolute;top: 50%;right: 20px;margin-top: -4px;width: 12px;height: 8px;background-image: url(../images/common/ico_loca_arrow.png);}
+.location > li > a:hover{background: #4a4c4d; border-right: 1px solid #4a4c4d; }
+.location > li > a.open{background: #ffffff;border: 1px solid #661e43;color: #000000;}
+.location > li > a.open::after{background-position: 0 8px;}
+.location > li ul{display: none; padding: 10px 0; background: #fff; border: 1px solid #ccc; border-top: none;}
+.location > li ul li{line-height: 1.8;}
+.location > li ul li a:hover{background: #f7f7f7;color: #661e43;}
+
+/* cont */
+.cont .inner{position: relative;width: 1180px;margin: auto;}
+
+/* booking-cont */
+.booking-cont .tab-head::after{content: '';display: block;clear: both; }
+.booking-cont .tab-head .tab-triptype{float: left; margin-bottom: 20px;}
+.booking-cont .tab-head .tab-triptype:after{content: '';display: block;clear: both;}
+.booking-cont .tab-head .tab-triptype li{float: left;}
+.booking-cont .tab-head .tab-triptype li a{display: inline-block;width: 132px;height: 46px;border: 1px solid #ddd;border-left: none; font-size: 18px;line-height: 46px;text-align: center;}
+.booking-cont .tab-head .tab-triptype li:first-child a{border-radius: 4px 0 0 4px;}
+.booking-cont .tab-head .tab-triptype li:last-child a{border-radius: 0 4px 4px 0;}
+.booking-cont .tab-head .tab-triptype li.on a{background: #661e43;color: #ffffff;}
+.booking-cont .tab-head .multi-guide{float: left;margin-left: 20px;line-height: 46px;}
+.booking-cont .tab-head .multi-guide .btn-info{display: inline-block;width: 20px;height: 20px;background: url(../images/common/icon_info.png) 0 0 no-repeat;vertical-align: middle; text-indent: -9999px;}
+
+.booking-cont .itinerary::after{content: '';display: block;clear: both;}
+.booking-cont .itinerary div[class^='itinerary_']{position: relative; float: left;width: calc(33.3% - 2px);margin-right: 2px;}
+.booking-cont .itinerary div[class^='itinerary_']:last-child{margin-right: 0;}
+.booking-cont .itinerary div[class^='itinerary_'] input{width: 100%;height: 100px;border-bottom: none;outline: none;}
+.booking-cont .itinerary div[class^='itinerary_'] input::placeholder{font-size: 28px;}
+.booking-cont .itinerary div[class^='itinerary_'] a[class^='btn']{display: inline-block;position: absolute; right: 15px;bottom: 15px;  width: 40px;height: 40px;background: url(../images/common/ico_location.png) center center / 30px no-repeat;z-index: 10;}
+.booking-cont .itinerary div[class^='itinerary_'] a.btn-calendar{background-image: url(../images/common/ico_calendar.png);}
+
+.booking-cont .passengers { display: block; position: relative; }
+.booking-cont .passengers::after{content: '';display: block;clear: both;}
+.booking-cont .passengers .area { display: block; float: left; width: 366px; margin-left: 40px; }
+.booking-cont .passengers .area:first-of-type{ margin-left: 0; }
+.booking-cont .passengers .area h5{font-size: 23px;font-weight: 400;}
+.booking-cont .passengers .area span{color: #666666;}
+.booking-cont .passengers-info{margin-top: 20px;}
+.booking-cont .passengers-info::after{content: '';display: block;clear: both;}
+.booking-cont .passengers-info P{float: left;line-height: 46px;}
+.booking-cont .passengers-info .btn-popup{float: right;}
+.booking-cont .btn-number-box { position: relative;margin-top: 20px; padding: 5px; min-height: 46px; background-color: #f3f3f3; }
+.booking-cont .btn-number-box input{width: 100%;border: none;font-size: 22px; text-align: center;outline: none;}
+.booking-cont .btn-number-box .btn-number { display: inline-block; position: absolute; top: 5px; width: 46px; height: 46px; background: #fff url(../images/common/btn-plus.png) 0 0  / 100% no-repeat; }
+.booking-cont .btn-number-box .btn-number.minus { left: 5px;background-image: url(../images/common/btn-minus.png); }
+.booking-cont .btn-number-box .btn-number.plus { right: 5px;}
+
+.booking-cont .btn-area::after{content: '';display: block;clear: both;}
+.booking-cont .btn-area button{float: right; width: 150px;height: 56px;margin-top: 20px; line-height: 56px;font-size: 18px;}
+
+/* checkin-cont */
+.checkin-cont .tab-area .tab li{width: 50%;}
+
+.checkin-cont .tab-cont{padding-top: 45px;}
+.checkin-cont .visual-banner{background-image: url(../images/sub/checkin-visual.png);}
+.checkin-cont .visual-banner .banner-cont .tit{margin-bottom: 20px;font-size: 32px;line-height: 1;}
+
+.checkin-cont .gray-box{position: relative; height: 110px;line-height: 110px;padding: 0 45px;box-sizing: border-box;}
+.checkin-cont .gray-box .txt{display: inline-block; position: relative;padding-left: 70px;font-size: 25px;}
+.checkin-cont .gray-box .txt::before{content: '';display: inline-block;position: absolute; left: 0;top: 50%;width: 55px;height: 55px;margin-top: -27.5px; background: url(../images/sub/ico-grayBox.png) center / 100% no-repeat;}
+.checkin-cont .gray-box .purple{position: absolute;right: 45px;top: 50%; width: 175px;height: 46px; margin-top: -23px;}
+
+.checkin-cont .list-type1{margin-top: 10px;}
+
+.checkin-cont .icon-row ul{border-top: 1px solid #666;}
+.checkin-cont .icon-row ul > li{position: relative;width: 100%;padding: 40px 30px;border: 1px solid #ddd;box-sizing: border-box;}
+.checkin-cont .icon-row .num{display: inline-block;width: 47px;height: 47px;border-radius: 50%;background: #f0f0f0; color: #555555; font-size: 18px; font-weight: 600; text-align: center;line-height: 47px;vertical-align: top;}
+.checkin-cont .icon-row .ico{display: inline-block;width: 84px;height: 76px;margin: 0 50px;background-image: url(../images/sub/ico-check01.png);background-position: center;background-repeat: no-repeat;vertical-align: top;}
+.checkin-cont .icon-row .ico02{background-image: url(../images/sub/ico-check02.png);}
+.checkin-cont .icon-row .ico03{background-image: url(../images/sub/ico-check03.png);}
+.checkin-cont .icon-row .ico04{background-image: url(../images/sub/ico-check04.png);}
+.checkin-cont .icon-row .txt-wrap{display: inline-block;}
+.checkin-cont .icon-row .txt-wrap dt{margin-bottom: 10px;font-size: 23px;}
+.checkin-cont .icon-row .txt-wrap dd{font-size: 16px;}
+.checkin-cont .icon-row .txt-wrap p{margin-top: 20px; font-size: 18px;}
+
+.checkin-cont .faq-wrap{border-top: 1px solid #666;border-bottom: 1px solid #ddd;}
+.checkin-cont .ques-wrap:first-child{border-top: none;}
+.checkin-cont .ques-wrap{position: relative; height: 55px; padding:15px; border-top: 1px solid #ddd;font-size: 16px; box-sizing: border-box;cursor: pointer;}
+.checkin-cont .ques-wrap .btn-faq-toggle{position: absolute;right: 15px;top: 50%;width: 20px;height: 20px;margin-top: -10px;background: url(../images/common/btn_faq_toggle.png) 0 -20px / 100% no-repeat;text-indent: -9999px;}
+.checkin-cont .ques-wrap.on{font-weight: 600;}
+.checkin-cont .ques-wrap.on .btn-faq-toggle{background-position: 0 0;}
+.checkin-cont .answ-wrap{display: none; overflow: hidden; background: #f7f7f7; padding: 27px 15px; border-top: 1px solid #ddd;}
+.checkin-cont .answ-cont{display: inline-block;font-size: 15px;}
+.checkin-cont span[class^='txt-']{color: #661e43; font-size: 23px; font-weight: bold; margin-right: 20px;line-height: 1; vertical-align: top;}
+
+/* travel */
+.travel-cont .visual-banner{background-image: url(../images/sub/travel-visual.png);}
+
+.travel-cont .scrh-wrap{padding: 40px 0; background-color: #f0f0f0;text-align: center;}
+.travel-cont .scrh-wrap input{width: 614px; height: 44px;line-height: 44px; background: #ffffff;border: 1px solid #ccc; text-align: left;}
+.travel-cont .scrh-wrap .btn-inquiry{width: 90px;height: 44px;margin-left: -3px; vertical-align: bottom;border-radius: 0;}
+
+.travel-cont .txt-scrh{margin: 50px 0;font-size: 23px; text-align: center;}
+
+.travel-cont .tab-area .tab li{width: 25%;}
+.travel-cont .tab-cont{display: none;margin-top: 10px;}
+.travel-cont .tab-cont.on{display: block;}
+.travel-cont dl{position: relative;display: flex;justify-content: center;align-items: center; padding: 50px 30px;border-bottom: 1px solid #ddd; box-sizing: border-box;}
+.travel-cont dl:after{content: '';display: block;clear: both; }
+.travel-cont dl dt{float: left;width: 25%;font-size: 23px;}
+.travel-cont dl dd{float: left;width: 75%;font-size: 16px;}
+.travel-cont dl .btn-popup{position: relative;padding: 4px 25px 4px 10px;}
+.travel-cont dl .btn-popup::after{content: '';display: inline-block;position: absolute;right: 6px;top: 50%;width: 14px;height: 14px;margin-top: -7px; background: url(../images/common/ico-popup.png) center center / 100% no-repeat;}
+
+/* mileage-cont */
+.mileage-cont .tab li{width: 25%;}
+
+.mileage-cont .product-list:after{content: '';display: block;clear: both;}
+.mileage-cont .product-list li{float: left;width: 380px;margin-right: 20px;border: 1px solid #ddd;box-sizing: border-box;}
+.mileage-cont .product-list li:last-child{margin-right: 0;}
+.mileage-cont .product-list .img-wrap{overflow: hidden;width: 100%;height: 244px;}
+.mileage-cont .product-list .img-wrap img{width: 100%;height: 100%;}
+.mileage-cont .product-list dl{height: 157px;padding: 20px;box-sizing: border-box;}
+.mileage-cont .product-list dt .sub-txt{color: #333;font-size: 15px;}
+.mileage-cont .product-list dt .tit{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin-bottom: 5px;color: #000000;font-size: 20px;}
+.mileage-cont .product-list dd .price .num{display: inline-block; color: #661e43;font-size: 22px;font-weight: 600;margin-right: 3px;}
+.mileage-cont .product-list dd .date{color: #555555;text-align: right;}
+
+.mileage-cont .notice-list li{padding: 13px 0;border-bottom: 1px solid #ccc;}
+.mileage-cont .notice-list .category,.mileage-cont .notice-list .date{display: inline-block;color: #999;}
+.mileage-cont .notice-list .category{width: 200px;}
+.mileage-cont .notice-list .date{float: right;}
+
+.mileage-info .tit{margin: 50px 0 40px;font-size: 35px;text-align: center;}
+.mileage-info .info-icon-wrap{padding: 20px 0;border: 1px solid #ddd;box-sizing: border-box;}
+.mileage-info .info-icon-wrap::after{content: '';display: block;clear: both;}
+.mileage-info .info-icon-wrap li{float: left;width: 33.3%;border-right: 1px solid #ddd; text-align: center;box-sizing: border-box;}
+.mileage-info .info-icon-wrap li:nth-of-type(3){border-right: none;}
+.mileage-info .info-icon-wrap li a{position: relative;}
+.mileage-info .info-icon-wrap li a::before{content: '';display: inline-block;width: 84px;height: 76px;margin: 30px 0 25px;background-image: url(../images/sub/icon-mileageinfo01.png); background-position: 0 0;background-repeat: no-repeat;background-size: 100% 100%;}
+.mileage-info .info-icon-wrap li:nth-of-type(2) a::before{background-image: url(../images/sub/icon-mileageinfo02.png);}
+.mileage-info .info-icon-wrap li:nth-of-type(3) a::before{background-image: url(../images/sub/icon-mileageinfo03.png);}
+.mileage-info .gray-box{line-height: 34px;}
+.mileage-info .gray-box p{font-size: 18px;}
+.mileage-info .gray-box em{font-size: 15px;}

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/daterangepicker.css" /> -->
+    <script type="text/javascript" src="./js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="./js/libs/jquery-3.4.1.min.js"></script>
+    <!-- <script type="text/javascript" src="./js/libs/moment.min.js"></script> -->
+    <!-- <script type="text/javascript" src="./js/libs/daterangepicker.js"></script> -->
+    <script type="text/javascript" src="./js/libs/jquery-ui.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <!-- top-area -->
+            <div class="top-area">
+                <div class="inner">
+                    <ul class="left-element">
+                        <li><a href="#">마일리지 적립몰</a></li>
+                        <li><a href="#">기내 면세점</a></li>
+                        <li><a href="#">기업우대</a></li>
+                    </ul>
+                    <ul class="right-element">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li class="btn-tooltip">
+                            <a href="#">고객서비스</a>
+                            <ul class="tooltipbox">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#" >자주찾는질문</a></li>
+                                <li><a href="#">고객의 말씀</a></li>
+                                <li><a href="#">양식다운로드</a></li>
+                            </ul>
+                        </li>
+                        <li class="lang-select">
+                            <a href="#" class="btn-language"><span class="country01">대한민국</span></a>
+                            <a href="#">한국어</a>
+                            <a href="#">English</a>
+                            <div class="layer-pop" id="layerLanguage">
+                                <p class="pop-tit">선택하세요</p>
+                                <select id="nation" title="국가" >
+                                    <option value="KR">대한민국</option>
+                                    <option value="DE">독일</option>
+                                    <option value="US">미국</option>
+                                    <option value="UZ">우즈베키스탄</option>
+                                    <option value="CN">중국</option>
+                                </select>
+                                <select id="lang" title="언어">
+                                </select>
+                                <button type="button">적용하기</button>
+                                <a href="#" class="btn-close"><span class="hd-element">팝업닫기버튼</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- top-area -->
+            <!-- body-area -->
+            <div class="body-area">
+                <div class="inner">
+                    <h1 class="logo"><a href="./index.html"><img src="./images/common/logo.png" alt="진에어"></a></h1>
+                    <div class="gnb-area">
+                        <span class="gnb-line"></span>
+                        <ul class="gnb">
+                            <li><a href="./booking.html">예약</a></li>
+                            <li><a href="./checkIn.html">여행 준비</a></li>
+                            <li><a href="./travel.html">여행</a></li>
+                            <li><a href="./mileage.html">마일리지몰</a></li>
+                        </ul> 
+                    </div>
+                    <div class="nav-right">
+                        <a href="#" class="btn-mypage">
+                            <span class="hd-element">마이페이지버튼</span>
+                        </a>
+                        <button class="btn-search">
+                            <span class="hd-element">검색버튼</span>
+                        </button>
+                        <div class="layer-pop" id="layerSearch">
+                            <form action="">
+                                <input type="text" placeholder="검색어를 입력하세요">
+                                <button type="button" class="gray">검색</button>
+                            </form>
+                            <a href="#" class="btn-close"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- body-area -->
+        </header>
+        <!-- header -->
+        <!-- location-box -->
+        <div class="location-box">
+            <div class="inner">
+                <ul class="location">
+                    <li class="home"><a href="index.html"><span class="hd-element">메인으로 이동</span></a></li>
+                    <li>
+                        <a href="#">여행</a>
+                        <ul>
+                            <li><a href="./booking.html">예약</a></li>
+                            <li><a href="./checkIn.html">여행 준비</a></li>
+                            <li><a href="./travel.html">여행</a></li>
+                            <li><a href="./mileage.html">서비스안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">항공권 예약</a>
+                        <ul>
+                            <li><a href="#">항공권 예약</a></li>
+                            <li><a href="#">예약 조희</a></li>
+                            <li><a href="#">체크인</a></li>
+                            <li><a href="#">운항 정보</a></li>
+                            <li><a href="#">취항지 정보</a></li>
+                        </ul>
+                    </li>
+                </ul>    
+            </div>
+        </div>
+        <!-- location-box -->
+        <!-- container -->
+        <div id="container">
+            <div class="cont travel-cont">
+                <div class="inner">
+                    <h3>공항안내</h3>
+                    <!-- visual-banner -->
+                    <div class="visual-banner">
+                        <div class="banner-cont">
+                            <p>취항지 공항의 카운터 위치 및 시설 정보, 공항서비스를<br>확인하실 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <!-- visual-banner -->
+                    <div class="scrh-wrap">
+                        <input type="text" placeholder="공항 선택">
+                        <button class="btn-inquiry purple">조회</button>
+                    </div>
+                    <p class="txt-scrh"><span class="purple">인천 공항</span>의 조회 결과입니다.</p>
+                    <div class="tab-area">
+                        <ul class="tab">
+                            <li class="on"><a href="#">공항정보</a></li>
+                            <li><a href="#">체크인</a></li>
+                            <li><a href="#">라운지</a></li>
+                            <li><a href="#">환승절차</a></li>
+                        </ul>
+                        <!-- tab-cont -->
+                        <!-- 공항정보 탭 -->
+                        <div class="tab-cont on">
+                            <dl>
+                                <dt>공항명</dt>
+                                <dd>인천국제공항 제 1여객터미널</dd>
+                            </dl>
+                            <dl>
+                                <dt>위치</dt>
+                                <dd>서울 도심에서 서쪽으로 약 60km 떨어진 곳에 위치 (시청 기준)</dd>
+                            </dl>
+                            <dl>
+                                <dt>웹사이트</dt>
+                                <dd>http://www.airport.kr/</dd>
+                            </dl>
+                        </div>
+                        <!-- 공항정보 탭 -->
+                        <!-- 체크인 탭 -->
+                        <div class="tab-cont">
+                            <dl>
+                                <dt>체크인 카운터</dt>
+                                <dd>
+                                    제1여객터미널 3층 국제선<br><br>
+                                    G1~G10: 인터넷/모바일/셀프체크인 셀프 백드롭(무인) <br>
+                                    A ZONE: 퍼스트클래스 / 비즈니스클래스 / 진에어클럽 PLTM, DMPP, DMPL 회원<br>
+                                    B2~B5: 진에어클럽 다이아몬드 회원 / 스타얼라이언스 골드 회원<br>
+                                    B6~B8: 진에어클럽 골드회원<br>
+                                    B9~B10: 기업회원<br>
+                                    B11~B15: 셀프 체크인 짐 부치는 곳(Bag Drop Only)<br><br>
+                                    B19~B25: 미국행 전용 카운터<br>
+                                    B26~B30:인터넷/모바일 체크인 짐 부치는 곳<br>
+                                    B31: FMLY/HMOM 전용<br>
+                                    B32: 대기손님/항공사직원<br><br>
+                                    C1~C14: 셀프 체크인 짐 부치는 곳(Bag Drop Only)
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>카운터 운영시간</dt>
+                                <dd>Open - 오전 6시 05분 (OZ731/OZ701/OZ623/OZ6233 호치민/마닐라/사이판 전용 카운터 오전 5시 Open)
+                                    Close - 해당일 마지막 항공편 출발 시간 50분 전</dd>
+                            </dl>
+                            <dl>
+                                <dt>키오스크 이용 가능 여부</dt>
+                                <dd><a href="#" class="btn-popup">키오스크 안내</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>모바일 탑승권 사용<br>가능 여부</dt>
+                                <dd><a href="#" class="btn-popup">온라인 체크인 안내</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>지점연락처</dt>
+                                <dd>032-744-2000</dd>
+                            </dl>
+                        </div>
+                        <!-- 체크인 탭 -->
+                        <!-- 라운지 탭 -->
+                        <div class="tab-cont">
+                            <dl>
+                                <dt>라운지명</dt>
+                                <dd>인천공항 진에어 라운지(Asiana Lounge)</dd>
+                            </dl>
+                            <dl>
+                                <dt>위치</dt>
+                                <dd>
+                                    제 1 여객 터미널<br><br>
+                                    일등석 라운지: 11번 탑승구 근처<br><br>
+                                    비지니스 라운지: 11번 · 26번 · 43번 탑승구 근처<br><br>
+                                    ※ 2020년 3월 8일 부 비지니스 센트럴 라운지 (26번 탑승구 근처) 운영 임시 중단
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>운영시간</dt>
+                                <dd>
+                                    일등석 라운지: 05:00~ 22:00 <br>
+                                    비즈니스 라운지 동편 (East): 0500~22:00 <br>
+                                    중앙 (Central): 05:00~00:00 <br>
+                                    서편 (West): 06:00~00:30
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>운영주체</dt>
+                                <dd>진에어</dd>
+                            </dl>
+                        </div>
+                        <!-- 라운지 탭 -->
+                        <!-- 환승절차 -->
+                        <div class="tab-cont">
+                            <dl>
+                                <dt>국내선 → 국제선</dt>
+                                <dd>
+                                    2층 국내선 도착 GATE -> 1층 수하물 캐로셀 -> 1층 입국장 통과 -> 3층으로 이동 -> 체크인 카운터(K, L, M ISLAND)로 이동 -> CHK-IN 후 보안검색대 통과 -> 법무부 출국심사 -> (외항사 이용 고객 경우 스타라인 통하여 탑승동에서 여객터미널로 이동) -> 국제선 출발 GATE <br><br>
+                                    최소 연결 시간<br>
+                                    김포공항 국내선 → 인천공항 국제선: 2시간 55분<br><br>
+                                    인천공항 국내선 → 인천공항 국제선: 1시간 40분
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>국제선 → 국내선</dt>
+                                <dd>
+                                    절차<br>
+                                    가. 손님 동선<br>
+                                    2층 국제선 도착 GATE -> (외국항공사 이용 고객 경우 스타라인 통하여 탑승동에서 여객터미널로 이동) -> 입국심사대 통과 -> 1층 수하물 수취대 -> 세관 통과 -> 입국장 통과(1층) -> 국내선 체크인카운터(1층 GATE3번 전면부)로 이동 -> 보안검색대 통과 -> 국내선 출발 GATE <br><br>
+                                    나. 수하물 P/U 및 입국 여부<br>
+                                    * 국제선 도착 후 입국 신고 및 수하물 P/U해야 함<br>
+                                    주의사항<br>
+                                    OZ8531 (부산 내항기) 및 KE1413, 1415 (대구 내항기) 연결 손님은 국제선 환승과 마찬가지로 환승통로 통과 후 해당 항공사 환승카운터 및 GATE 이동<div class="br"></div>
+                                    최소 연결 시간<br>
+                                    ※ 제1여객터미널 : 아시아나항공 및 대다수 항공사 (제2터미널 항공사 제외)banner-cont
+                                    ※ 제2여객터미널 : 대한항공, 델타항공, 에어프랑스, KLM <br><br>
+                                    제1터미널 국제선 ▶ 제1터미널 국내선 = 1시간40분<br>
+                                    제2터미널 국제선 ▶ 제1터미널 국내선 = 2시간10분<br>
+                                    제1터미널 국제선 ▶ T2 내항기(KE1413/5) = 1시간30분<br>
+                                    제1터미널 국제선 ▶ 김포공항 국내선 = 2시간40분
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>환승 연결 수하물</dt>
+                                <dd>
+                                    1. 24시간이내 국제선-국제선 연결<br>
+                                    * 최종 목적지까지 연결<br><br>
+                                    2. 국제선 - 국내선 연결<br>
+                                    : 수하물 P/U 한 후 국내선 CNTR 로 이동<br><br>
+                                    3. 내항기(ICN/PUS) <br>
+                                    : 수하물 PUS까지 연결
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- 환승절차 -->
+                        <!-- tab-cont -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+        <!-- footer -->
+        <footer>
+            <!-- quick-nav -->
+            <div class="quick-nav">
+                <div class="inner">
+                    <ul class="quick-icon">
+                        <li><a href="#">지니쿠폰</a></li>
+                        <li><a href="#">나비포인트</a></li>
+                        <li><a href="#">예약 확인</a></li>
+                    </ul>
+                    <p>나비포인트와 지니쿠폰을 통해 더욱 합리적인 여행을 계획하세요.</p>
+                </div>
+            </div>
+            <!-- quick-nav -->
+            <!-- foot-menuwrap -->
+            <div class="menu-wrap">
+                <div class="inner">
+                    <dl>
+                        <dt>회사안내</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">채용정보</a></li>
+                                <li><a href="#">CEO인사말</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">기업개요</a></li>
+                                <li><a href="#">기업지배구조</a></li>
+                                <li><a href="#">투자정보</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>약관 및 안내</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">개인정보 처리방침</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">여객운송약관</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">법적 고지문</a></li>
+                                <li><a href="#">사이트맵</a></li>
+                                <li><a href="#">e-티켓 확인증</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>고객서비스</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">자주 묻는 질문(FAQ)</a></li>
+                                <li><a href="#">고객의 말씀(Q&A)</a></li>
+                                <li><a href="#">기내 유실물 찾기</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">이용자 서비스</a></li>
+                                <li><a href="#">피해구제계획</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <div class="sns-wrap">
+                        <ul class="sns">
+                            <li class="twitter"><a href="#">트위터 바로가기</a></li>
+                            <li class="facebook"><a href="#">페이스북 바로가기</a></li>
+                            <li class="youtube"><a href="#">유튜브 바로가기</a></li>
+                            <li class="insta"><a href="#">인스타그램 바로가기</a></li>
+                            <li class="blog"><a href="#">블로그 바로가기</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- foot-menuwrap -->
+            <div class="info-wrap">
+                <div class="inner">
+                    <div class="info">
+                        <address>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>㈜진에어</li>
+                                        <li>대표이사 최정호</li>
+                                        <li>사업자등록번호 121-81-89086</li>
+                                        <li>통신판매업 신고번호 : 제2008-서울 강서-0408</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>주소 : 서울시 강서구 공항대로 453</li>
+                                        <li>개인정보보호책임자 : 이광</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </address>
+                        <p class="copy">Copyright © JIN AIR. All Rights Reserved.</p>
+                    </div>
+                    <div class="newsletter">
+                        <h3>뉴스레터 신청</h3>
+                        <input type="text" name="emAdrNewsletter" id="emAdrNewsletter" placeholder="Email Address"> 
+                        <a href="#" id="btnAddNewsLetter">신청</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+    </div>
+    <script type="text/javascript" src="./js/common.js"></script>
+</body>
+</html>

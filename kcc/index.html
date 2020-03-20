@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="common/css/default.css">
+    <link rel="stylesheet" href="common/css/style.css?v=201907301039">
+    <link rel="stylesheet" href="common/css/main.css?v=201907301039">
+    <link rel="stylesheet" href="common/css/swiper.css">
+    <link rel="stylesheet" href="common/css/font.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="common/js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="common/js/libs/jquery-3.4.1.min.js?v=1907241904"></script>
+    <script type="text/javascript" src="common/js/libs/jquery-migrate-3.0.1.min.js"></script>
+    <script type="text/javascript" src="common/js/main.js?v=1907291636"></script>
+    <script type="text/javascript" src="common/js/common.js?v=1909271231"></script>
+    <title>KCC</title>
+</head>
+<body>
+    <!-- wrap 시작 -->
+    <div id="wrap">
+        <!-- header 시작 -->
+        <header id="header" class="header">
+            <div class="inner">
+                <h1 class="logo"><a href="./index.html">kcc</a></h1>
+                <div class="gnbWarp">
+                    <ul id="nav">
+                        <li class="depth1">
+                            <a href="./company.html">KCC소개</a>
+                            <ul class="depth2">
+                                <li><a href="./company.html">기업정보</a></li>
+                                <li><a href="./company.html">CEO인사말</a></li>
+                                <li><a href="./company.html">투자정보</a></li>
+                                <li><a href="./company.html">사회적책임</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="./product.html">제품</a>
+                            <ul class="depth2">
+                                <li><a href="./product.html">도료</a></li>
+                                <li><a href="./product.html">유리</a></li>
+                                <li><a href="./product.html">창호</a></li>
+                                <li><a href="./product.html">바닥재</a></li>
+                                <li><a href="./product.html">홈씨씨인테리어</a></li>
+                            </ul>
+                        </li>  
+                        <li class="depth1">
+                            <a href="./rnd.html">R&D</a>
+                            <ul class="depth2">
+                                <li><a href="./rnd.html">연구소</a></li>
+                                <li><a href="./rnd.html">연구업적</a></li>
+                                <li><a href="./rnd.html">에너지제로하우스</a></li>
+                            </ul>
+                        </li>  
+                        <li class="depth1">
+                            <a href="./news.html">홍보</a>
+                            <ul class="depth2">
+                                <li><a href="./news.html">KCC뉴스</a></li>
+                                <li><a href="./news.html">KCC광고</a></li>
+                                <li><a href="./news.html">KCC사보</a></li>
+                            </ul>
+                        </li>  
+                        <li class="depth1">
+                            <a href="./contribution.html">사회공헌</a>
+                            <ul class="depth2">
+                                <li><a href="./contribution.html">사회공헌 소개</a></li>
+                                <li><a href="./contribution.html">사회공헌 활동</a></li>
+                                <li><a href="./contribution.html">사회공헌 발자취</a></li>
+                            </ul>
+                        </li>      
+                    </ul>        
+                </div>
+                <a href="javascript:toggleAllMenu();" class="btn_allMenu">전체메뉴</a>
+                <!-- allMenu_wrap 시작 -->
+                <div class="allMenu_wrap">
+                    <div class="allMenu_mask" onclick="toggleAllMenu()"></div>
+                    <div id="allMenu">
+                        <div class="allMenu_top">
+                            <h2><a href="./index.html">kcc</a></h2>
+                        </div>
+                        <div class="allMenu_con">
+                            <ul>
+                                <li class="depth1">
+                                    <a href="#">KCC소개</a>
+                                    <ul class="depth2">
+                                        <li><a href="./company.html">기업정보</a></li>
+                                        <li><a href="./company.html">CEO인사말</a></li>
+                                        <li><a href="./company.html">투자정보</a></li>
+                                        <li><a href="./company.html">사회적책임</a></li>
+                                    </ul>
+                                </li>
+                                <li class="depth1">
+                                    <a href="#">제품</a>
+                                    <ul class="depth2">
+                                        <li><a href="./product.html">도료</a></li>
+                                        <li><a href="./product.html">유리</a></li>
+                                        <li><a href="./product.html">창호</a></li>
+                                        <li><a href="./product.html">바닥재</a></li>
+                                    </ul>
+                                </li>
+                                <li class="depth1">
+                                    <a href="#">R&D</a>
+                                    <ul class="depth2">
+                                        <li><a href="./rnd.html">연구소</a></li>
+                                        <li><a href="./rnd.html">연구업적</a></li>
+                                        <li><a href="./rnd.html">에너지제로하우스</a></li>
+                                    </ul>
+                                </li>
+                                <li class="depth1">
+                                    <a href="#">홍보</a>
+                                    <ul class="depth2">
+                                        <li><a href="./news.html">KCC뉴스</a></li>
+                                        <li><a href="./news.html">KCC광고</a></li>
+                                        <li><a href="./news.html">KCC사보</a></li>
+                                    </ul>
+                                </li>
+                                <li class="depth1">
+                                    <a href="#">사회공헌</a>
+                                    <ul class="depth2">
+                                        <li><a href="./contribution.html">사회공헌 소개</a></li>
+                                        <li><a href="./contribution.html">사회공헌 활동</a></li>
+                                        <li><a href="./contribution.html">사회공헌 발자취</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn_close" onclick="toggleAllMenu()">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header 끝 -->
+        <!-- contanier 시작 -->
+        <section id="container" class="container">
+            <!-- mainVisual 시작 -->
+            <div class="mainVisual">
+                <div class="swiper-container swiper-mainVisual">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide visual1">
+                            <div class="txtWrap">
+                                <p class="visualTit">우수한 냉방∙단열 성능으로 에너지 절약에 앞장섭니다</p>
+                                <p class="visualTxt">더운 여름도 추운 겨울도<br/>걱정없는 우리집</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide visual2">
+                            <div class="txtWrap">
+                                <p class="visualTit">불에 타지 않고 유해성분이 없는 쾌적한 환경을 책임집니다</p>
+                                <p class="visualTxt">에너지를 지켜주고<br/>새집증후군까지 안심</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide visual3">
+                            <div class="txtWrap">
+                                <p class="visualTit">친환경 기술로 자연과 함께하는 주거문화를 만들어 갑니다</p>
+                                <p class="visualTxt">자연을 닮은<br/>자연 그대로의 건강한 색</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide visual4">
+                            <div class="txtWrap">
+                                <p class="visualTit">시대의 성장을 이끌어온 건축자재 기술부터 첨단소재 기술까지</p>
+                                <p class="visualTxt">시대의 요구에<br/> 기술로 답합니다</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev swiper-button-white visual-btn-prev"></div>
+                    <div class="swiper-button-next swiper-button-white visual-btn-next"></div>
+                </div>
+            </div>
+            <!-- mainVisual 끝 -->
+            <!-- contents 시작 -->
+            <div class="contents">
+                <!-- mainProduct 시작 -->
+                <div class="mainProduct">
+                    <div class="inner">
+                        <h2>
+                            <span class="subTitle">PRODUCT</span>
+                            KCC의 다양한 제품을 소개합니다.
+                        </h2>
+                        <div class="swiper-container swiper-MainProduct">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="imgWrap">
+                                            <img src="common/images/main/main_product_01.jpg" alt="선명하고 오래 가는 건축 도료">
+                                        </div>
+                                        <span class="productNum">01</span>
+                                        <div class="txtWrap">
+                                           <h3>선명하고 오래 가는 건축 도료</h3>
+                                           <p>현대 건축의 특성과 용도에 맞춰 개발되어 건축물의 수명을 연장시키며 아름답게 장식해 줍니다.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="imgWrap">
+                                            <img src="common/images/main/main_product_02.jpg" alt="투명성이 우수한 KCC 투명유리">
+                                        </div>
+                                        <span class="productNum">02</span>
+                                        <div class="txtWrap">
+                                           <h3>투명성이 우수한 KCC 투명유리</h3>
+                                           <p>건축물의 새는 에너지를 잡고, 외관은 더욱 아름답게!</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="imgWrap">
+                                            <img src="common/images/main/main_product_03.jpg" alt="PVC 창호">
+                                        </div>
+                                        <span class="productNum">03</span>
+                                        <div class="txtWrap">
+                                           <h3>PVC 창호 </h3>
+                                           <p>단열과 방음 등의 성능이 우수하며 미려한 외관을 갖춘 고품질의 창호입니다.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="imgWrap">
+                                            <img src="common/images/main/main_product_04.jpg" alt="KCC 바닥재">
+                                        </div>
+                                        <span class="productNum">04</span>
+                                        <div class="txtWrap">
+                                           <h3>KCC 바닥재</h3>
+                                           <p>실용적이면서 세련된 디자인으로 우리의 환경을 쾌적하고 편안하게 만들어 드립니다.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="imgWrap">
+                                            <img src="common/images/main/main_product_05.jpg" alt="홈씨씨인테리어">
+                                        </div>
+                                        <span class="productNum">05</span>
+                                        <div class="txtWrap">
+                                           <h3>홈씨씨인테리어</h3>
+                                           <p> 전문가가 체계적인 트렌드 분석을 통해 제안해 드리는 홈씨씨인테리어</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next swiper-button-white product-btn-next"></div>
+                        <div class="swiper-button-prev swiper-button-white product-btn-prev"></div>
+                    </div>
+                </div>
+                <!-- mainProduct 끝 -->
+                <!-- mainNews 시작 -->
+                <div class="mainNews">
+                    <div class="inner">
+                        <h2>
+                            <span class="subTitle">NEWS & NOTICE </span>
+                            KCC의 새로운 소식을 알려드립니다.
+                        </h2>
+                        <ul>
+                            <li>
+                                <div class="imgWrap">
+                                    <img src="common/images/main/main_news_1.jpg" alt="KCC, ‘KCC 숲으로 프로젝트’로 도심 속 녹지 만든다">
+                                </div>
+                                <div>
+                                    <span>2019-07-18</span>
+                                    <dl>
+                                        <dt>
+                                            KCC, ‘KCC 숲으로 프로젝트’로 도심 속 녹지 만든다</dt>
+                                        <dd>KCC(대표: 정몽익)가 미세먼지 저감 및 도시열섬 완화를 위해 서초구와 함께 ‘KCC 숲으로 프로젝트’를 진행하며</dd>
+                                    </dl>
+                                </div>
+                                <span class="txt">KCC 뉴스</span>
+                            </li>
+                            <li>
+                                <div class="imgWrap">
+                                    <img src="common/images/main/main_news_2.png" alt="KCC, 기업분할 통한 신설법인 ㈜KCG(가칭) 설립">
+                                </div>
+                                <div>
+                                    <span>2019-07-28</span>
+                                    <dl>
+                                        <dt>KCC, 기업분할 통한 신설법인 ㈜KCG(가칭) 설립</dt>
+                                        <dd>KCC(대표: 정몽익)가 7월 11일 이사회를 열고 기업 분할을 통한 신설 법인 ㈜KCG(가칭:이하 KCG)의 설립을 승인했다고 밝혔다.</dd>
+                                    </dl>
+                                </div>
+                                <span class="txt">KCC 뉴스</span>
+                            </li>
+                            <li>
+                                <div class="imgWrap">
+                                    <img src="common/images/main/main_news_3.jpg" alt="KCC, 소방서 환경개선 위한 쿨루프 캠페인 실시">
+                                </div>
+                                <div>
+                                    <span>2019-07-28</span>
+                                    <dl>
+                                        <dt>KCC, 소방서 환경개선 위한 쿨루프 캠페인 실시</dt>
+                                        <dd>KCC(대표: 정몽익) 가 무더운 여름철을 앞두고 ‘쿨루프(Cool Roof) 캠페인’을 통해 폭염에 취약한 곳을 대상으로 차열 페인트 기부 및 시공 지원에 앞장서고 있다. </dd>
+                                    </dl>
+                                </div>
+                                <span class="txt">KCC 뉴스</span>
+                            </li>
+                            <li>
+                                <div class="imgWrap">
+                                    <img src="common/images/main/main_news_4.jpg" alt="CC, 고기능성 화장품 원료용 실리콘으로 K-Beauty 선도">
+                                </div>
+                                <div>
+                                    <span>2019-07-28</span>
+                                    <dl>
+                                        <dt>KCC, 고기능성 화장품 원료용 실리콘으로 K-Beauty 선도</dt>
+                                        <dd>KCC(대표: 정몽익)가 서울 코엑스에서 열린 글로벌 화장품 원료 전시회 ‘인코스메틱스 코리아(in-cosmetics Korea)2019’에 참가해 고기능성 화장품 원료용 실리콘을 선보이며 방문객들의 이목을 집중시켰다. 
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <span class="txt">KCC 뉴스</span>
+                            </li>
+                            <li>
+                                <div class="imgWrap">
+                                    <img src="common/images/main/main_news_5.jpg" alt="사회공헌 성금 20억 기탁">
+                                </div>
+                                <div>
+                                    <span>2019-07-28</span>
+                                    <dl>
+                                        <dt>사회공헌 성금 20억 기탁</dt>
+                                        <dd>KCC가 지난 1월 14일 사회복지공동모금회에 저소득층 가정 및 불 우이웃을 위한 성금 20억 원을 전달했다. </dd>
+                                    </dl>
+                                </div>
+                                <span class="txt rTxt">사회공헌</span>
+                            </li>
+                            <li>
+                                <div class="imgWrap">
+                                    <img src="common/images/main/main_news_6.jpg" alt="학업 집중도 향상을 위한 학교 만들기 나서">
+                                </div>
+                                <div>
+                                    <span>2019-07-28</span>
+                                    <dl>
+                                        <dt>학업 집중도 향상을 위한 학교 만들기 나서</dt>
+                                        <dd>KCC는 지난 17일 경기도 여주시에 위치한 여흥초등학교와 이포중학교에서 학생들의 깨끗하고 안전한 학교 환경 구축과 학업 성취도를 높이</dd>
+                                    </dl>
+                                </div>
+                                <span class="txt rTxt">사회공헌</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- mainNews 끝 -->
+                <!-- mainRecruit 시작 -->
+                <div class="mainRecruit">
+                    <div class="inner">
+                        <h2>
+                            <span class="subTitle">BUSINESS</span>
+                            KCC건설의 다양한 사업분야를 소개합니다.
+                        </h2>
+                        <ul>
+                            <li>
+                                <div>
+                                    <div class="imgWrap">
+                                        <img src="common/images/main/main_recruit_01.jpg" alt="">
+                                    </div>
+                                    <div class="txtWrap">
+                                        <span class="num">01.</span>
+                                        <h3>인재상</h3>
+                                        <p>기본에 충실하고 조직방향과 일치하는 전문지식을 가지고,  불굴의 의지와 창의력을 가지고 실천하는 당신이라면 KCC의 한사람이 될 수 있습니다.</p>
+                                        <a href="#"><i class="fa fas fa-chevron-right"></i></a>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="imgWrap">
+                                        <img src="common/images/main/main_recruit_02.jpg" alt="">
+                                    </div>
+                                    <div class="txtWrap">
+                                        <span class="num">02.</span>
+                                        <h3>채용</h3>
+                                        <p>여러분의 꿈과 고객의 꿈을 함께 이룰 수 있는 곳, KCC에서 열정적이고, 참신한 인재를 기다리고 있습니다.우수한 인재를 채용하기 위하여 유형별로 프로세스가 다르게 진행되고 있습니다.</p>
+                                        <a href="#"><i class="fa fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <div class="imgWrap">
+                                        <img src="common/images/main/main_recruit_03.jpg" alt="">
+                                    </div>
+                                    <div class="txtWrap">
+                                        <span class="num">03.</span>
+                                        <h3>인사제도</h3>
+                                        <p>KCC는 모든 구성원의 가치와 역량을 소중히 생각하며 구성원에게 최고의 자부심을 주기 위하여 합리적 인사제도를 실시하고 있습니다.</p>
+                                        <a href="#"><i class="fa fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>       
+                <!-- mainRecruit 끝 -->
+                <!-- mainWebzine 시작 -->
+                <div class="mainWebzine">
+                    <div class="inner">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <h3>KCC 소셜미디어</h3>
+                                    <p>+</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h3>TV 광고</h3>
+                                    <p>+</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h3>KCC 사보</h3>
+                                    <p>+</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- mainWebzine 끝 -->
+            <!-- contents 끝 -->
+        </section>
+        <!-- contanier 끝 -->
+        <!-- footer 시작 -->
+        <footer id="footer" class="footer">
+            <div class="inner">
+                <div class="fl_l">
+                    <a href="#">kcc</a>
+                    <p class="copy">COPYRIGHT (C) 2017 KCC CORPORATION.<br/> ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="fl_c">
+                    <ul>  
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">협력업체등록안내</a></li>
+                        <li><a href="#">동반성장 홍보영상</a></li>
+                        <li><a href="#">전자공고</a></li>
+                        <li><a href="#">SITEMAP</a></li>
+                    </ul>
+                    <P>서울특별시 서초구 사평대로 344 </P>
+                    <P>고객상담실 080-022-8200</P>
+                    <p>대표번호 02-3480-5000</P>
+                </div>
+                <div class="fl_r">
+                    <div class="btnWrap">
+                        <div class="btn_link">
+                            <a href="#none">KCC그룹 패밀리 사이트 +</a>
+                        </div>
+                        <div class="linkArea">
+                            <strong>KCC그룹 패밀리 사이트 </strong>
+                            <p>KCC의 패밀리 사이트를 소개합니다. <br/> 아래 계열사를 선택하시면 해당 홈페이지로 이동 합니다. </p>      
+                            <div>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/kccstory/" target="_blank">KCC 공식 페이스북</a></li>
+                                    <li><a href="http://blog.naver.com/kcc_world" target="_blank">KCC 공식 블로그</a></li>
+                                    <li><a href="https://www.kccworld.co.kr/kccsilicone/main.do" target="_blank">KCC 실리콘</a></li>
+                                    <li><a href="http://www.kccrefinish.co.kr/" target="_blank">KCC 자동차보수용도료</a></li>
+                                    <li><a href="https://www.kccworld.co.kr/kccmarine/main.do" target="_blank">KCC 선박도료</a></li>
+                                    <li><a href="http://www.kccegis.com" target="_blank">KCC 이지스 프로농구단</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="http://www.homecc.co.kr" target="_blank">홈씨씨인테리어</a></li>
+                                    <li><a href="http://www.kccworld.net" target="_blank">KCC 건설</a></li>
+                                    <li><a href="http://kac.kccworld.co.kr" target="_blank">KAC</a></li>
+                                    <li><a href="http://www.kccgolf.co.kr" target="_blank">금강레저</a></li>
+                                    <li><a href="http://www.baschem.co.uk" target="_blank">바실돈</a></li>
+                                    <li><a href="http://www.kcccolorndesign.com" target="_blank">KCC 컬러&디자인센터</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <strong class="f_info"><a href="#">데이터뱅크 +</a></strong>
+                </div>
+            </div>
+        </footer>
+        <!-- footer 끝 -->
+   </div>
+</body>
+</html>
+         

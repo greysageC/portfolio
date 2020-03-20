@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/daterangepicker.css" /> -->
+    <script type="text/javascript" src="./js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="./js/libs/jquery-3.4.1.min.js"></script>
+    <!-- <script type="text/javascript" src="./js/libs/moment.min.js"></script> -->
+    <!-- <script type="text/javascript" src="./js/libs/daterangepicker.js"></script> -->
+    <script type="text/javascript" src="./js/libs/jquery-ui.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <!-- top-area -->
+            <div class="top-area">
+                <div class="inner">
+                    <ul class="left-element">
+                        <li><a href="#">마일리지 적립몰</a></li>
+                        <li><a href="#">기내 면세점</a></li>
+                        <li><a href="#">기업우대</a></li>
+                    </ul>
+                    <ul class="right-element">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li class="btn-tooltip">
+                            <a href="#">고객서비스</a>
+                            <ul class="tooltipbox">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#" >자주찾는질문</a></li>
+                                <li><a href="#">고객의 말씀</a></li>
+                                <li><a href="#">양식다운로드</a></li>
+                            </ul>
+                        </li>
+                        <li class="lang-select">
+                            <a href="#" class="btn-language"><span class="country01">대한민국</span></a>
+                            <a href="#">한국어</a>
+                            <a href="#">English</a>
+                            <div class="layer-pop" id="layerLanguage">
+                                <p class="pop-tit">선택하세요</p>
+                                <select id="nation" title="국가" >
+                                    <option value="KR">대한민국</option>
+                                    <option value="DE">독일</option>
+                                    <option value="US">미국</option>
+                                    <option value="UZ">우즈베키스탄</option>
+                                    <option value="CN">중국</option>
+                                </select>
+                                <select id="lang" title="언어">
+                                </select>
+                                <button type="button">적용하기</button>
+                                <a href="#" class="btn-close"><span class="hd-element">팝업닫기버튼</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- top-area -->
+            <!-- body-area -->
+            <div class="body-area">
+                <div class="inner">
+                    <h1 class="logo"><a href="./index.html"><img src="./images/common/logo.png" alt="진에어"></a></h1>
+                    <div class="gnb-area">
+                        <span class="gnb-line"></span>
+                        <ul class="gnb">
+                            <li><a href="./booking.html">예약</a></li>
+                            <li><a href="./checkIn.html">여행 준비</a></li>
+                            <li><a href="./travel.html">여행</a></li>
+                            <li><a href="./mileage.html">마일리지몰</a></li>
+                        </ul> 
+                    </div>
+                    <div class="nav-right">
+                        <a href="#" class="btn-mypage">
+                            <span class="hd-element">마이페이지버튼</span>
+                        </a>
+                        <button class="btn-search">
+                            <span class="hd-element">검색버튼</span>
+                        </button>
+                        <div class="layer-pop" id="layerSearch">
+                            <form action="">
+                                <input type="text" placeholder="검색어를 입력하세요">
+                                <button type="button" class="gray">검색</button>
+                            </form>
+                            <a href="#" class="btn-close"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- body-area -->
+        </header>
+        <!-- header -->
+        <!-- location-box -->
+        <div class="location-box">
+            <div class="inner">
+                <ul class="location">
+                    <li class="home"><a href="index.html"><span class="hd-element">메인으로 이동</span></a></li>
+                    <li>
+                        <a href="#">여행 준비</a>
+                        <ul>
+                            <li><a href="./booking.html">예약</a></li>
+                            <li><a href="./checkIn.html">여행 준비</a></li>
+                            <li><a href="./travel.html">여행</a></li>
+                            <li><a href="./mileage.html">서비스안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">항공권 예약</a>
+                        <ul>
+                            <li><a href="#">항공권 예약</a></li>
+                            <li><a href="#">예약 조희</a></li>
+                            <li><a href="#">체크인</a></li>
+                            <li><a href="#">운항 정보</a></li>
+                            <li><a href="#">취항지 정보</a></li>
+                        </ul>
+                    </li>
+                </ul>    
+            </div>
+        </div>
+        <!-- location-box -->
+        <!-- container -->
+        <div id="container">
+            <div class="cont checkin-cont">
+                <div class="inner">
+                    <h3>사전 체크인</h3>
+                    <!-- tab-area -->
+                    <div class="tab-area">
+                        <ul class="tab">
+                            <li class="on"><a href="#">온라인 체크인</a></li>
+                            <li><a href="#">오토 체크인</a></li>
+                        </ul>
+                        <!-- tab-cont -->
+                        <div class="tab-cont">
+                            <div class="visual-banner">
+                                <div class="banner-cont">
+                                    <p class="tit">온라인 체크인이란?</p>
+                                    <p>홈페이지나 모바일 앱에서<br/>빠른 사전 수속이 가능합니다. 홈/모바일 탑승권 허용 공항에서는,<br/>사전에 발급받은 탑승권으로 바로 게이트로 가실 수 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="gray-box">
+                                <p class="txt">공항 도착 전 체크인을 마치고, 편안하고 여유롭게 떠나세요!</p>
+                                <button class="purple">지금 체크인하기</button>
+                            </div>
+                            <h4>이용 안내</h4>
+                            <table class="table-type1">
+                                <colgroup>
+                                    <col width="160"> 
+                                    <col width="440"> 
+                                    <col width="160"> 
+                                    <col width="420"> 
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">이용시간</th>
+                                        <th scope="col">이용노선</th>
+                                        <th scope="col">이용대상</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">국내선</th>
+                                        <td>출발 24시간 ~ 30분 전까지</td>
+                                        <th rowspan="2">전 노선</th>
+                                        <td rowspan="2">항공권 결제가 완료된 전자항공권(E-Ticket)소지 고객</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">국제선</th>
+                                        <td>출발 48시간 ~ 1시간 전까지<br/>(미주 노선은 출발 24시간 전부터)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul class="list-type1">
+                                <li>이용 제한 노선 : 부산 출발 국내선 및 일부 부정기편</li>
+                                <li>이용 제한 대상 : 타사 항공기로 운항하는 공동운항편 이용 고객</li>
+                            </ul>
+                            <h4>온라인 체크인 후 탑승권 발급 허용 공항
+                            </h4>
+                            <p class="txt-sub">다음 공항을 출발하는 항공편은 홈/모바일탑승권만으로 바로 출국장 입장이 가능합니다.</p>
+                            <table class="table-type1">
+                                <colgroup>
+                                    <col width="200"> 
+                                    <col width="*"> 
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">지역</th>
+                                        <th scope="col">출발 공항</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">국내</th>
+                                        <td>전 공항 (인천공항, 김포공항, 제주공항, 광주공항, 여수공항, 대구공항, 청주공항)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">미주</th>
+                                        <td>로스앤젤레스(LAX), 샌프란시스코(SFO), 뉴욕(JFK), 시카고(ORD), 시애틀(SEA), 호놀룰루(HNL)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">유럽</th>
+                                        <td>런던(LHR), 로마(FCO), 파리(CDG), 프랑크푸르트(FRA), 이스탄불(IST), 바르셀로나(BCN)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">일본</th>
+                                        <td>도쿄나리타(NRT), 도쿄하네다(HND), 오사카(KIX), 후쿠오카(FUK), 오키나와(OKA), 나고야(NGO)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">기타지역</th>
+                                        <td>홍콩(HKG), 타이페이(TPE), 방콕(BKK), 알마티(ALA), 시드니(SYD)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h4>온라인 체크인 후 공항 이용 방법</h4>
+                            <div class="icon-row">
+                                <ul>
+                                    <li>
+                                        <span class="num">1</span>
+                                        <span class="ico ico01"></span>
+                                        <div class="txt-wrap">
+                                            <dl>
+                                                <dt>온라인 체크인 및 탑승권 발급</dt>
+                                                <dd>체크인 최종 단계에서 편리한 발급 방법을 택하여 사전에 탑승권을 준비해주세요. (중복 및 재발급 가능)</dd>
+                                            </dl>
+                                            <p>탑승권을 준비하는 방법 (택1)</p>
+                                            <ol>
+                                                <li>1. E-mail로 받은 홈탑승권(PDF) 출력하기</li>
+                                                <li>2. 문자(SMS) 또는 카카오 알림톡으로 받은 링크 클릭하여 모바일 탑승권 보기</li>
+                                                <li>3. 앱에서 체크인 후, ‘탑승권 조회’ 클릭하여 모바일 탑승권 앱 저장하기</li>
+                                            </ol>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="num">2</span>
+                                        <span class="ico ico02"></span>
+                                        <div class="txt-wrap">
+                                            <dl>
+                                                <dt>공항 도착</dt>
+                                                <dd>부칠 짐이 없을 때 : 준비해온 탑승권을 가지고, 출발장으로 바로 이동합니다.</dd>
+                                                <dd>부칠 짐이 있을 때 : 온라인 체크인 전용 카운터에서 짐을 부치고, 출발장으로 이동합니다.<br/>
+                                                    <span>* 국내선 항공기 출발 20분 전까지 출발장에 입장하지 않을 경우, 탑승이 취소됩니다.</span>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="num">3</span>
+                                        <span class="ico ico03"></span>
+                                        <div class="txt-wrap">
+                                            <dl>
+                                                <dt>보안검색</dt>
+                                                <dd>출발장 입구에서 보안 요원에게 탑승권과 신분증(주민등록증/운전면허증/여권 등)을 제시한 후, 게이트 안내 용지를 수령합니다.</dd>
+                                                <dd>보안 검색 후 탑승구로 이동합니다.</dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="num">4</span>
+                                        <span class="ico ico04"></span>
+                                        <div class="txt-wrap">
+                                            <dl>
+                                                <dt>항공기 탑승</dt>
+                                                <dd>원활한 탑승 확인을 위하여, 탑승권을 개별 소지하여 주십시오. (모바일 탑승권은 가급적 본인 단말기에 저장)</dd>
+                                                <dd>출발 15분전 탑승이 시작되고, 출발 5분전에 탑승이 마감됩니다.</dd>
+                                                <dd>정시운항을 위하여 탑승시각에 맞춰 해당 탑승구에서 대기하여 주시기 바랍니다.</dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4>FAQ</h4>
+                            <div class="faq-wrap">
+                                <div class="ques-wrap">
+                                    <span class="txt-ques">Q</span>
+                                    <span class="tit">여행사에서 구입한 e-티켓도 온라인에서 체크인이 가능한가요?</span>
+                                    <span class="btn-faq-toggle">내용펼치기</span>
+                                </div>
+                                <div class="answ-wrap">
+                                    <span class="txt-answ">A</span>
+                                    <div class="answ-cont">
+                                        <p>여행사에서 구입한 항공권이라도 체크인이 가능합니다. 하지만 타사 항공기로 운항하는 공동운항편을 이용하시는 경우에는 이용이 제한됩니다.</p>
+                                    </div>
+                                </div>
+                                <div class="ques-wrap">
+                                    <span class="txt-ques">Q</span>
+                                    <span class="tit">온라인 체크인 이용가능시간은 언제인가요?</span>
+                                    <span class="btn-faq-toggle">내용펼치기</span>
+                                </div>
+                                <div class="answ-wrap">
+                                    <span class="txt-answ">A</span>
+                                    <div class="answ-cont">
+                                        <p>예약하신 항공편 출발 48시간 전부터 홈페이지나 모바일 기기에서 이용할 수 있습니다.</p>
+                                        <ul>
+                                            <li>- 국제선 : 출발 48시간 전 ~ 1시간 전까지 (단, 미주노선은 24시간 전부터 이용 가능)</li>
+                                            <li>- 국내선 : 출발 24시간 전 ~ 30분 전까지</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ques-wrap">
+                                    <span class="txt-ques">Q</span>
+                                    <span class="tit">온라인 체크인을 이용하려면 사전에 무엇을 준비해야 하나요?</span>
+                                    <span class="btn-faq-toggle">내용펼치기</span>
+                                </div>
+                                <div class="answ-wrap">
+                                    <span class="txt-answ">A</span>
+                                    <div class="answ-cont">
+                                        <p>아래 정보를 입력하시면 됩니다.</p>
+                                        <ul>
+                                            <li>1. 항공편 출발일</li>
+                                            <li>2. 예약번호(6 or 8자리) 혹은 전자항공권번호(13자리)<br/>온라인체크인은 로그인 없이, 위의 정보만 입력하면 쉽고 간편하게 이용하실 수 있습니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tab-cont -->
+                    </div>
+                    <!-- tab-area -->
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+        <!-- footer -->
+        <footer>
+            <!-- quick-nav -->
+            <div class="quick-nav">
+                <div class="inner">
+                    <ul class="quick-icon">
+                        <li><a href="#">지니쿠폰</a></li>
+                        <li><a href="#">나비포인트</a></li>
+                        <li><a href="#">예약 확인</a></li>
+                    </ul>
+                    <p>나비포인트와 지니쿠폰을 통해 더욱 합리적인 여행을 계획하세요.</p>
+                </div>
+            </div>
+            <!-- quick-nav -->
+            <!-- foot-menuwrap -->
+            <div class="menu-wrap">
+                <div class="inner">
+                    <dl>
+                        <dt>회사안내</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">채용정보</a></li>
+                                <li><a href="#">CEO인사말</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">기업개요</a></li>
+                                <li><a href="#">기업지배구조</a></li>
+                                <li><a href="#">투자정보</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>약관 및 안내</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">개인정보 처리방침</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">여객운송약관</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">법적 고지문</a></li>
+                                <li><a href="#">사이트맵</a></li>
+                                <li><a href="#">e-티켓 확인증</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>고객서비스</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">자주 묻는 질문(FAQ)</a></li>
+                                <li><a href="#">고객의 말씀(Q&A)</a></li>
+                                <li><a href="#">기내 유실물 찾기</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">이용자 서비스</a></li>
+                                <li><a href="#">피해구제계획</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <div class="sns-wrap">
+                        <ul class="sns">
+                            <li class="twitter"><a href="#">트위터 바로가기</a></li>
+                            <li class="facebook"><a href="#">페이스북 바로가기</a></li>
+                            <li class="youtube"><a href="#">유튜브 바로가기</a></li>
+                            <li class="insta"><a href="#">인스타그램 바로가기</a></li>
+                            <li class="blog"><a href="#">블로그 바로가기</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- foot-menuwrap -->
+            <div class="info-wrap">
+                <div class="inner">
+                    <div class="info">
+                        <address>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>㈜진에어</li>
+                                        <li>대표이사 최정호</li>
+                                        <li>사업자등록번호 121-81-89086</li>
+                                        <li>통신판매업 신고번호 : 제2008-서울 강서-0408</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>주소 : 서울시 강서구 공항대로 453</li>
+                                        <li>개인정보보호책임자 : 이광</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </address>
+                        <p class="copy">Copyright © JIN AIR. All Rights Reserved.</p>
+                    </div>
+                    <div class="newsletter">
+                        <h3>뉴스레터 신청</h3>
+                        <input type="text" name="emAdrNewsletter" id="emAdrNewsletter" placeholder="Email Address"> 
+                        <a href="#" id="btnAddNewsLetter">신청</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+    </div>
+    <script type="text/javascript" src="./js/common.js"></script>
+</body>
+</html>

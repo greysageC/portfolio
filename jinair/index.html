@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <script type="text/javascript" src="./js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="./js/libs/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/libs/jquery-ui.min.js"></script>
+
+    <title>진에어</title>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <!-- top-area -->
+            <div class="top-area">
+                <div class="inner">
+                    <ul class="left-element">
+                        <li><a href="#">마일리지 적립몰</a></li>
+                        <li><a href="#">기내 면세점</a></li>
+                        <li><a href="#">기업우대</a></li>
+                    </ul>
+                    <ul class="right-element">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li class="btn-tooltip">
+                            <a href="#">고객서비스</a>
+                            <ul class="tooltipbox">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#" >자주찾는질문</a></li>
+                                <li><a href="#">고객의 말씀</a></li>
+                                <li><a href="#">양식다운로드</a></li>
+                            </ul>
+                        </li>
+                        <li class="lang-select">
+                            <a href="#" class="btn-language"><span class="country01">대한민국</span></a>
+                            <a href="#">한국어</a>
+                            <a href="#">English</a>
+                            <div class="layer-pop" id="layerLanguage">
+                                <p class="pop-tit">선택하세요</p>
+                                <select id="nation" title="국가" >
+                                    <option value="KR">대한민국</option>
+                                    <option value="DE">독일</option>
+                                    <option value="US">미국</option>
+                                    <option value="UZ">우즈베키스탄</option>
+                                    <option value="CN">중국</option>
+                                </select>
+                                <select id="lang" title="언어">
+                                </select>
+                                <button type="button">적용하기</button>
+                                <a href="#" class="btn-close"><span class="hd-element">팝업닫기버튼</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- top-area -->
+            <!-- body-area -->
+            <div class="body-area">
+                <div class="inner">
+                    <h1 class="logo"><a href="./index.html"><img src="./images/common/logo.png" alt="진에어"></a></h1>
+                    <div class="gnb-area">
+                        <span class="gnb-line"></span>
+                        <ul class="gnb">
+                            <li><a href="./booking.html">예약</a></li>
+                            <li><a href="./checkIn.html">여행 준비</a></li>
+                            <li><a href="./travel.html">여행</a></li>
+                            <li><a href="./mileage.html">마일리지몰</a></li>
+                        </ul> 
+                    </div>
+                    <div class="nav-right">
+                        <a href="#" class="btn-mypage">
+                            <span class="hd-element">마이페이지버튼</span>
+                        </a>
+                        <button class="btn-search">
+                            <span class="hd-element">검색버튼</span>
+                        </button>
+                        <div class="layer-pop" id="layerSearch">
+                            <form action="">
+                                <input type="text" placeholder="검색어를 입력하세요">
+                                <button type="button" class="gray">검색</button>
+                            </form>
+                            <a href="#" class="btn-close"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- body-area -->
+        </header>
+        <!-- header -->
+        <!-- container -->
+        <div id="container">
+            <!-- main-top-area -->
+            <div class="main-top-area">
+                <!-- slide-area -->
+                <div class="slide-area">
+                    <div class="swiper-container" id="mainSlide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/main/mainslide-01.jpg" alt="체코">
+                                <div class="txt-wrap">
+                                    <p>2020 JINAIR LIKE</p>
+                                    <h2>하루 한번, 진에어와 함께<br/>떠나는 365일 세계여행</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/main/mainslide-02.jpg" alt="파리">
+                                <div class="txt-wrap">
+                                    <p>경유 일정 중 가장 빠른 진에어 항공!</p>
+                                    <h2>유럽으로 가는<br/>가장 합리적인 방법</h2>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/main/mainslide-03.jpg" alt="알프스">
+                                <div class="txt-wrap">
+                                    <P>천천히, 그리고 여유롭게 맑고 깨끗한 자연속으로..</P>
+                                    <h2>천혜의 대자연<br/>뉴질랜드</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mp-wrap">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-pause"></div>
+                    </div>
+                </div>
+                <!-- slide-area -->
+                <!-- booking-area -->
+                <div class="booking-area">
+                    <ul class="tab-triptype">
+                        <li class="on"><a href="#">왕복</a></li>
+                        <li><a href="#">편도</a></li>
+                        <li><a href="#">다구간</a></li>
+                    </ul>
+                    <div class="booking-wrap">
+                        <div class="selectValue loct spot-proven">
+                            <label for="txtDepartureAirportR" class="spot-place" id="labelDepartureAirportR" name="spot-place">출발지</label>
+                            <input type="text" id="txtDepartureAirportR" name="txtDepartureAirportR" class="spotentry" depArrType="dep">
+                        </div>
+                        <div class="shadow-layer select-airport" id="depAllAirportR" name="allAirportR">
+                            <div class="inner">
+                                <h4 class="hd-element">공항 선택</h4>
+                                <h5 class="hd-element">국제선</h5>
+                                <div class="flights-list national"></div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-M gray" onclick="javascript:clickNextStep('allAirportR', 'R');">다음</button>
+                                </div>
+                            </div>
+                            <a href="#none" class="layer-close">
+                                <span class="hd-element">닫기</span>
+                            </a>
+                        </div>
+                        <div class="selectValue loct spot-destin">
+                            <label for="txtArrivalAirportR" class="spot-place" id="labelArrivalAirportR" name="spot-place">도착지</label>
+                            <input type="text" id="txtArrivalAirportR" name="txtArrivalAirportR" class="spotentry" depArrType="arr">
+                        </div>
+                        <div class="shadow-layer case2 select-airport" id="depAllAirportR" name="allAirportR">
+                            <div class="inner">
+                                <h4 class="hd-element">공항 선택</h4>
+                                <h5 class="hd-element">국제선</h5>
+                                <div class="flights-list national"> </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-M gray" onclick="javascript:clickNextStep('allAirportR', 'R');">다음</button>
+                                </div>
+                            </div>
+                            <a href="#none" class="layer-close">
+                                <span class="hd-element">닫기</span>
+                            </a>
+                        </div>
+
+                        <div class="selectValue calr calendar-wrap">
+                            <label for="sCalendarR" name="calDesc"><span class="hd-element">날짜 선택</span></label>
+                            <input type="text" id="sCalendarR" class="spotentry datepicker" readonly="" autocomplete="off" data-dateformat="y.mm.dd" data-type="multi-step" placeholder="탑승일" readonly="">
+                            <a href="#none" class="btn-airport calendar-focus"><span class="hd-element">탑승일 선택 달력보기</span></a>
+                        </div>
+                        <!-- 탑승일 선택 수정 중 -->
+                        <!-- <div class="shadow-layer calendar-layer">
+                            <h4 class="hd-element">탑승일 선택</h4>
+                            <div class="cal-cont">
+                                <h4 class="hd-element">달력</h4>
+                                <div class="calendar-top">
+                                    <select name="" id="" class="white" title="탑승연도 및 월">
+                                        <option value="">2017.08</option>
+                                    </select>
+                                </div>
+                                <div class="compareCalendar"></div>
+                                <span href="#none" class="cal-status">가는 날</span><a href="#none" class="cal-reset calReset"><span class="hd-element">달력 새로고침</span></a>					
+                                <a href="#none" class="btn-cal-close"><span class="hd-element">닫기</span></a>	
+                            </div>	
+                            <div class="btn-area">
+                                <button type="button" class="btn-M gray btnNextStep">다음(탑승객 선택)</button>
+                            </div>
+                        </div> -->
+                        <div class="selectValue psng">
+                            <div class="psg-nums" id="pax-nums">
+                                <span>성인<span class="num">0</span></span>
+                                <span>소아<span class="num">0</span></span>
+                                <span>유아<span class="num">0</span></span>
+                            </div>
+                            <label for="psng"><span class="hd-element">탑승객수 선택</span></label>	
+                            <input type="text" id="psng" placeholder="탑승객">
+                            <a href="#none" class="btn-spot"><span class="hd-element">탑승객수 선택</span></a>
+                        </div>
+                        <div class="shadow-layer layer-passenger">
+                            <div class="inner">
+                                <h4 class="layer-tit">탑승객 선택</h4>
+                                <div class="passengers">
+                                    <div class="area">
+                                        <h5>성인 <span>(12세~)</span></h5>
+                                        <div class="btn-number-box" name="btn-number-box">
+                                            <input type="text" id="adultCount" name="adultCount" title="성인탑승인원" value="1" autocomplete="off">
+                                            <button type="button" class="btn-number minus" name="btn-number" ><span class="hd-element">감소</span></button>
+                                            <button type="button" class="btn-number plus" name="btn-number" ><span class="hd-element">증가</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="area">
+                                        <h5>소아
+                                            <span>(만 2세 ~ 12세 미만)</span>
+                                        </h5>
+                                        <div class="btn-number-box" name="btn-number-box">
+                                            <input type="text" id="childCount" name="childCount" title="소아탑승인원" value="0" autocomplete="off">
+                                            <button type="button" class="btn-number minus" name="btn-number" disabled><span class="hd-element">감소</span></button>
+                                            <button type="button" class="btn-number plus" name="btn-number" ><span class="hd-element">증가</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="area">
+                                        <h5>유아 <span>(만 2세 미만)</span></h5>
+                                        <div class="btn-number-box" name="btn-number-box">
+                                            <input type="text" id="infantCount" name="infantCount" title="유아탑승인원" value="0" autocomplete="off">
+                                            <button type="button" class="btn-number minus" name="btn-number" disabled><span class="hd-element">감소</span></button>
+                                            <button type="button" class="btn-number plus" name="btn-number" ><span class="hd-element">증가</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="passengers-info">
+                                    <ul class="list-type3">
+                                        <li id="passengerInfo">예약인원은 성인,소아, 유아를 포함하여 총 9명까지 선택 가능합니다.</li>
+                                        <li>전 구간에 소아와 함께 여행하는 동반 성인이 있을 경우, 소아 단독 항공권 구매가 가능합니다.</li>
+                                        <li>유아는 탑승일 기준 만 2세 미만까지이며, 좌석을 점유하지 않습니다.</li>
+                                    </ul>
+                                    <button type="button" class="btn-popup">나이 계산기</button>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="gray">다음</button>
+                                </div>							
+                            </div>
+                            <a href="#none" class="layer-close"><span class="hd-element">닫기</span></a>
+                        </div>
+                        <button type="button" id="registTravel" class="gray btn-revsearch">조회</button>
+                    </div>
+                </div>
+                <!-- booking-area -->
+                <!-- special-slide-area -->
+                <div class="special-slide-area">
+                    <div class="swiper-container" id="specialSlide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="../jinair/images/main/main-special-01.jpg" alt="제주">
+                                    </div>
+                                    <div class="desc-wrap">
+                                        <p class="place">
+                                            <span>서울 / 김포</span>
+                                            <span class="arrow"></span>
+                                            <span>제주</span>
+                                        </p>
+                                        <p class="price">
+                                            <span class="currency">KRW</span>
+                                            <span class="num">25,400</span>
+                                            <span class="start">~</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="../jinair/images/main/main-special-02.jpg" alt="영국">
+                                    </div>
+                                    <div class="desc-wrap">
+                                        <p class="place">
+                                            <span>서울 / 김포</span>
+                                            <span class="arrow"></span>
+                                            <span>영국</span>
+                                        </p>
+                                        <p class="price">
+                                            <span class="currency">KRW</span>
+                                            <span class="num">25,400</span>
+                                            <span class="start">~</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="../jinair/images/main/main-special-03.jpg" alt="대만">
+                                    </div>
+                                    <div class="desc-wrap">
+                                        <p class="place">
+                                            <span>서울 / 김포</span>
+                                            <span class="arrow"></span>
+                                            <span>대만</span>
+                                        </p>
+                                        <p class="price">
+                                            <span class="currency">KRW</span>
+                                            <span class="num">25,400</span>
+                                            <span class="start">~</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="../jinair/images/main/main-special-04.jpg" alt="뉴욕">
+                                    </div>
+                                    <div class="desc-wrap">
+                                        <p class="place">
+                                            <span>서울 / 김포</span>
+                                            <span class="arrow"></span>
+                                            <span>뉴욕</span>
+                                        </p>
+                                        <p class="price">
+                                            <span class="currency">KRW</span>
+                                            <span class="num">25,400</span>
+                                            <span class="start">~</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="../jinair/images/main/main-special-05.jpg" alt="방콕">
+                                    </div>
+                                    <div class="desc-wrap">
+                                        <p class="place">
+                                            <span>서울 / 김포</span>
+                                            <span class="arrow"></span>
+                                            <span>뉴욕</span>
+                                        </p>
+                                        <p class="price">
+                                            <span class="currency">KRW</span>
+                                            <span class="num">25,400</span>
+                                            <span class="start">~</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <!-- special-slide-area -->
+            </div>
+            <!-- main-top-area -->
+            <!-- content -->
+            <div id="content" class="content">
+                <!-- section01 -->
+                <div class="section section01">
+                    <div class="inner">
+                        <div class="main-tit">
+                            <h2>출도착 조회</h2>
+                            <p>취항지 출도착 스케줄을 상세하게 확인하실 수 있습니다.</p>
+                        </div>
+                        <div class="white-step-box">
+                            <div class="booking-wrap">
+                                <div class="option-wrap">
+                                    <select id="inqSelect">
+                                        <option value="line">노선조회</option>
+                                        <option value="num">편명조회</option>
+                                    </select>
+                                </div>
+                                <div class="selectValue loct line option-wrap"><input type="text" placeholder="출발지"></div>
+                                <div class="selectValue loct line option-wrap"><input type="text" placeholder="도착지"></div>
+                                <div class="selectValue num option-wrap"><input type="text" placeholder="OZ"></div>
+                                <div class="option-wrap">
+                                    <select id="searchDate">
+                                        <option value="20200101">2020.01.01</option>
+                                        <option value="20200102">2020.01.02</option>
+                                        <option value="20200103">2020.01.03</option>
+                                    </select>
+                                    <p class="txt">· 출발지 기준일</p>
+                                </div>
+                                <button id="searchDepArr" class="gray">조회하기</button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>  
+                <!-- section01 -->
+                <!-- section02 -->
+                <div class="section section02">
+                    <div class="inner">
+                        <div class="event-wrap">
+                            <div class="main-tit">
+                                <h2>이벤트</h2>
+                                <p>진에어만의 특별한 혜택을 누려보세요.</p>
+                            </div>
+                            <ul class="event-card-wrap">
+                                <li class="event-card">
+                                    <a href="#">
+                                        <div class="evt-img">
+                                            <img src="./images/main/main-event-01.jpg" alt="훌~쩍 떠나고 싶을 땐?">
+                                        </div>
+                                        <div class="evt-info">
+                                            <dl>
+                                                <dt>
+                                                    <span class="sub-txt">이벤트</span>
+                                                    <p class="tit">
+                                                        훌~쩍 떠나고 싶을 땐?
+                                                    </p>
+                                                </dt>
+                                                <dd class="date">2020-02-10 ~ 2020-03-28</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="event-card">
+                                    <a href="#">
+                                        <div class="evt-img">
+                                            <img src="./images/main/main-event-02.jpg" alt="진에어 동계 코트룸 서비스">
+                                        </div>
+                                        <div class="evt-info">
+                                            <dl>
+                                                <dt>
+                                                    <span class="sub-txt">이벤트</span>
+                                                    <p class="tit">
+                                                        진에어 동계 코트룸 서비스
+                                                    </p>
+                                                </dt>
+                                                <dd class="date">2020-01-14 ~ 2020-12-31</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="event-card">
+                                    <a href="#">
+                                        <div class="evt-img">
+                                            <img src="./images/main/main-event-03.jpg" alt="#편안 #행복 진에어 향기 테라피">
+                                        </div>
+                                        <div class="evt-info">
+                                            <dl>
+                                                <dt>
+                                                    <span class="sub-txt">이벤트</span>
+                                                    <p class="tit">
+                                                        #편안 #행복 진에어 향기 테라피
+                                                    </p>
+                                                </dt>
+                                                <dd class="date">2019-12-18 ~ 2020-12-17</dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- ext-service-wrap -->
+                        <div class="ext-service-wrap">
+                            <div class="main-tit">
+                                <h3>부가 서비스 안내</h3>
+                                <p>진에어의 다양한 제휴상품 이용하시고 편안한 여행하세요.</p>
+                            </div>
+                            <div class="service-box">
+                                <a href="#" class="mileage">
+                                    <dl>
+                                        <dt>마일리지 적립</dt>
+                                        <dd>
+                                            <div>
+                                                <p class="desc">현대렌탈케어 상품 이용 시<br/>5,000마일 적립!</p>
+                                                <span class="btn-link">바로가기</span>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </a>
+                                <a href="#" class="hotel">
+                                    <dl>
+                                        <dt>호텔</dt>
+                                        <dd>
+                                            <div>
+                                                <p class="desc">더 빠르고 스마트한<br/>숙박예약</p>
+                                                <span class="btn-link">바로가기</span>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </a>
+                                <a href="#" class="rental">
+                                    <dl>
+                                        <dt>렌터카</dt>
+                                        <dd>
+                                            <div>
+                                                <p class="desc">전세계 렌터카<br/>Rentalcars.com</p>
+                                                <span class="btn-link">바로가기</span>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </a>
+                                <a href="#" class="insurance">
+                                    <dl>
+                                        <dt>여행자 보험</dt>
+                                        <dd>
+                                            <div>
+                                                <p class="desc">해외여행의 필수품<br/>메리츠여행자보험</p>
+                                                <span class="btn-link">바로가기</span>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </a>
+                                <a href="#" class="ticket">
+                                    <dl>
+                                        <dt>투어&티켓</dt>
+                                        <dd>
+                                            <div>
+                                                <p class="desc">진에어 웹사이트에서<br/>항공권 예약 시 투어 티켓<br/> 최대 10% 할인!</p>
+                                                <span class="btn-link">바로가기</span>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ext-service-wrap -->
+                    </div>
+                </div>
+                <!-- section02 -->
+            </div>
+            <!-- content -->
+            <div class="layer-bgBlack"></div>   
+        </div>
+        <!-- container -->
+        <!-- footer -->
+        <footer>
+            <!-- quick-nav -->
+            <div class="quick-nav">
+                <div class="inner">
+                    <ul class="quick-icon">
+                        <li><a href="#">지니쿠폰</a></li>
+                        <li><a href="#">나비포인트</a></li>
+                        <li><a href="#">예약 확인</a></li>
+                    </ul>
+                    <p>나비포인트와 지니쿠폰을 통해 더욱 합리적인 여행을 계획하세요.</p>
+                </div>
+            </div>
+            <!-- quick-nav -->
+            <!-- foot-menuwrap -->
+            <div class="menu-wrap">
+                <div class="inner">
+                    <dl>
+                        <dt>회사안내</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">채용정보</a></li>
+                                <li><a href="#">CEO인사말</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">기업개요</a></li>
+                                <li><a href="#">기업지배구조</a></li>
+                                <li><a href="#">투자정보</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>약관 및 안내</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">개인정보 처리방침</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">여객운송약관</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">법적 고지문</a></li>
+                                <li><a href="#">사이트맵</a></li>
+                                <li><a href="#">e-티켓 확인증</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>고객서비스</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">자주 묻는 질문(FAQ)</a></li>
+                                <li><a href="#">고객의 말씀(Q&A)</a></li>
+                                <li><a href="#">기내 유실물 찾기</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">이용자 서비스</a></li>
+                                <li><a href="#">피해구제계획</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <div class="sns-wrap">
+                        <ul class="sns">
+                            <li class="twitter"><a href="#">트위터 바로가기</a></li>
+                            <li class="facebook"><a href="#">페이스북 바로가기</a></li>
+                            <li class="youtube"><a href="#">유튜브 바로가기</a></li>
+                            <li class="insta"><a href="#">인스타그램 바로가기</a></li>
+                            <li class="blog"><a href="#">블로그 바로가기</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- foot-menuwrap -->
+            <div class="info-wrap">
+                <div class="inner">
+                    <div class="info">
+                        <address>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>㈜진에어</li>
+                                        <li>대표이사 최정호</li>
+                                        <li>사업자등록번호 121-81-89086</li>
+                                        <li>통신판매업 신고번호 : 제2008-서울 강서-0408</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>주소 : 서울시 강서구 공항대로 453</li>
+                                        <li>개인정보보호책임자 : 이광</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </address>
+                        <p class="copy">Copyright © JIN AIR. All Rights Reserved.</p>
+                    </div>
+                    <div class="newsletter">
+                        <h3>뉴스레터 신청</h3>
+                        <input type="text" name="emAdrNewsletter" id="emAdrNewsletter" placeholder="Email Address"> 
+                        <a href="#" id="btnAddNewsLetter">신청</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+    </div>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
