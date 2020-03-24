@@ -73,7 +73,7 @@ footer{padding: 20px;background: #222222;color: #fff; text-align: center;}
  @media all and (max-width:1024px){
     .list li{width: calc(50% - 26px);}
     .list li:nth-child(2n+2) {margin-right: 0;}
-    .popup-area div{width: 80%;}
+    .popup-area div{width: 90%;}
     #profile ul li{width: 50%;}
  } 
 
